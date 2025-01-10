@@ -5,6 +5,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import xintao.azuretraveller.AzureTraveller;
+import xintao.azuretraveller.util.AtArmorItem;
 
 public class AtItems 
 {
@@ -41,7 +42,7 @@ public class AtItems
     
     public static final Item MYTHRIL_HELMET = registerItem("mythril_helmet", new ArmorItem(AtArmorMaterials.MYTHRIL, 
             ArmorItem.Type.HELMET, new Item.Settings().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(25))));
-    public static final Item MYTHRIL_CHESTPLATE = registerItem("mythril_chestplate", new ArmorItem(AtArmorMaterials.MYTHRIL, 
+    public static final Item MYTHRIL_CHESTPLATE = registerItem("mythril_chestplate", new AtArmorItem(AtArmorMaterials.MYTHRIL, 
             ArmorItem.Type.CHESTPLATE, new Item.Settings().maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(25))));
     public static final Item MYTHRIL_LEGGINGS = registerItem("mythril_leggings", new ArmorItem(AtArmorMaterials.MYTHRIL, 
             ArmorItem.Type.LEGGINGS, new Item.Settings().maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(25))));
