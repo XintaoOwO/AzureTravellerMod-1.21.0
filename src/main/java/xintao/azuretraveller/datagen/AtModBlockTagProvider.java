@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
 import xintao.azuretraveller.block.AtModBlocks;
+
 import java.util.concurrent.CompletableFuture;
 
 public class AtModBlockTagProvider extends FabricTagProvider.BlockTagProvider

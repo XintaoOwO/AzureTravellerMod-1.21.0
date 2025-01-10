@@ -4,6 +4,7 @@ import com.google.common.collect.Maps;
 import net.minecraft.block.Block;
 import net.minecraft.data.family.BlockFamily;
 import net.minecraft.registry.Registries;
+
 import java.util.Map;
 import java.util.stream.Stream;
 

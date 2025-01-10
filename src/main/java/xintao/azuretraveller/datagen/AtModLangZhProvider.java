@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider;
 import net.minecraft.registry.RegistryWrapper;
 import xintao.azuretraveller.block.AtModBlocks;
 import xintao.azuretraveller.item.AtModItems;
+
 import java.util.concurrent.CompletableFuture;
 
 public class AtModLangZhProvider extends FabricLanguageProvider

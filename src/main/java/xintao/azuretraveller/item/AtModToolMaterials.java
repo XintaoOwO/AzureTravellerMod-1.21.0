@@ -1,12 +1,13 @@
 package xintao.azuretraveller.item;
 
-import java.util.function.Supplier;
 import com.google.common.base.Suppliers;
 import net.minecraft.block.Block;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.registry.tag.TagKey;
 import xintao.azuretraveller.tag.AtModBlockTags;
+
+import java.util.function.Supplier;
 
 public enum AtModToolMaterials implements ToolMaterial 
 {

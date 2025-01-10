@@ -7,6 +7,7 @@ import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.ItemTags;
 import xintao.azuretraveller.item.AtModItems;
 import xintao.azuretraveller.tag.AtModItemTags;
+
 import java.util.concurrent.CompletableFuture;
 
 public class AtModItemTagProvider extends FabricTagProvider.ItemTagProvider 
