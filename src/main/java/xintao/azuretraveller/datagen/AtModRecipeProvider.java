@@ -12,17 +12,17 @@ import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.util.Identifier;
 import xintao.azuretraveller.AzureTraveller;
-import xintao.azuretraveller.block.ModBlocks;
-import xintao.azuretraveller.item.ModItems;
-import xintao.azuretraveller.tag.ModItemTags;
+import xintao.azuretraveller.block.AtModBlocks;
+import xintao.azuretraveller.item.AtModItems;
+import xintao.azuretraveller.tag.AtModItemTags;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
-public class ModRecipeProvider extends FabricRecipeProvider
+public class AtModRecipeProvider extends FabricRecipeProvider
 {
-    private static final List<ItemConvertible> MYTHRIL_INGOT = List.of(ModItems.RAW_MYTHRIL);
+    private static final List<ItemConvertible> MYTHRIL_INGOT = List.of(AtModItems.RAW_MYTHRIL);
     
-    public ModRecipeProvider(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) 
+    public AtModRecipeProvider(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) 
     {
         super(output, registriesFuture);
     }
@@ -30,16 +30,16 @@ public class ModRecipeProvider extends FabricRecipeProvider
     @Override
     public void generate(RecipeExporter exporter) 
     {
-        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, ModItems.MYTHRIL_INGOT, 
-                RecipeCategory.BUILDING_BLOCKS, ModBlocks.MYTHRIL_BLOCK);
-        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, ModItems.RAW_MYTHRIL, 
-                RecipeCategory.BUILDING_BLOCKS, ModBlocks.RAW_MYTHRIL_BLOCK);
-        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, ModItems.SILVER_INGOT,
-                RecipeCategory.BUILDING_BLOCKS, ModBlocks.SILVER_BLOCK);
-        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, ModItems.RAW_SILVER,
-                RecipeCategory.BUILDING_BLOCKS, ModBlocks.RAW_SILVER_BLOCK);
-        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, ModItems.CELESTITE_INGOT,
-                RecipeCategory.BUILDING_BLOCKS, ModBlocks.CELESTITE_BLOCK);
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, AtModItems.MYTHRIL_INGOT, 
+                RecipeCategory.BUILDING_BLOCKS, AtModBlocks.MYTHRIL_BLOCK);
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, AtModItems.RAW_MYTHRIL, 
+                RecipeCategory.BUILDING_BLOCKS, AtModBlocks.RAW_MYTHRIL_BLOCK);
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, AtModItems.SILVER_INGOT,
+                RecipeCategory.BUILDING_BLOCKS, AtModBlocks.SILVER_BLOCK);
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, AtModItems.RAW_SILVER,
+                RecipeCategory.BUILDING_BLOCKS, AtModBlocks.RAW_SILVER_BLOCK);
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, AtModItems.CELESTITE_INGOT,
+                RecipeCategory.BUILDING_BLOCKS, AtModBlocks.CELESTITE_BLOCK);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.FLINT, 1)
                 .pattern("###")
@@ -49,14 +49,14 @@ public class ModRecipeProvider extends FabricRecipeProvider
         
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.SUGAR, 1)
                 .pattern("##")
-                .input('#', ModItemTags.SUGAR_REFINING_TAG)
+                .input('#', AtModItemTags.SUGAR_REFINING_TAG)
                 .criterion("has_item", RecipeProvider.conditionsFromItem(Items.BEETROOT))
                 .offerTo(exporter, Identifier.of(AzureTraveller.MOD_ID, "beetroot_to_sugar"));
         
-        offerSmelting(exporter, MYTHRIL_INGOT, RecipeCategory.MISC, ModItems.MYTHRIL_INGOT, 
+        offerSmelting(exporter, MYTHRIL_INGOT, RecipeCategory.MISC, AtModItems.MYTHRIL_INGOT, 
                 0.7f, 200, "mythril_ingot");
         
-        offerBlasting(exporter, MYTHRIL_INGOT, RecipeCategory.MISC, ModItems.MYTHRIL_INGOT, 
+        offerBlasting(exporter, MYTHRIL_INGOT, RecipeCategory.MISC, AtModItems.MYTHRIL_INGOT, 
                 0.7f, 100, "mythril_ingot");
     }
 }

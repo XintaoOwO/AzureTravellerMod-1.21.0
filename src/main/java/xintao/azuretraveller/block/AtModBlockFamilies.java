@@ -7,24 +7,24 @@ import net.minecraft.registry.Registries;
 import java.util.Map;
 import java.util.stream.Stream;
 
-public class ModBlockFamilies 
+public class AtModBlockFamilies 
 {
     private static final Map<Block, BlockFamily> BASE_BLOCKS_TO_FAMILIES = Maps.<Block, BlockFamily>newHashMap();
     
-    public static final BlockFamily MYTHRIL = register(ModBlocks.MYTHRIL_BLOCK)
-            .slab(ModBlocks.MYTHRIL_SLAB)
-            .stairs(ModBlocks.MYTHRIL_STAIRS)
-            .fence(ModBlocks.MYTHRIL_FENCE)
-            .fenceGate(ModBlocks.MYTHRIL_FENCE_GATE)
-            .wall(ModBlocks.MYTHRIL_WALL)
-            .button(ModBlocks.MYTHRIL_BUTTON)
-            .pressurePlate(ModBlocks.MYTHRIL_PRESSURE_PLATE)
-            .door(ModBlocks.MYTHRIL_DOOR)
-            .trapdoor(ModBlocks.MYTHRIL_TRAPDOOR)
+    public static final BlockFamily MYTHRIL = register(AtModBlocks.MYTHRIL_BLOCK)
+            .slab(AtModBlocks.MYTHRIL_SLAB)
+            .stairs(AtModBlocks.MYTHRIL_STAIRS)
+            .fence(AtModBlocks.MYTHRIL_FENCE)
+            .fenceGate(AtModBlocks.MYTHRIL_FENCE_GATE)
+            .wall(AtModBlocks.MYTHRIL_WALL)
+            .button(AtModBlocks.MYTHRIL_BUTTON)
+            .pressurePlate(AtModBlocks.MYTHRIL_PRESSURE_PLATE)
+            .door(AtModBlocks.MYTHRIL_DOOR)
+            .trapdoor(AtModBlocks.MYTHRIL_TRAPDOOR)
             .unlockCriterionName("has_mythril_block")
             .build();
     
-    public static final BlockFamily CELESTE_PLANKS = register(ModBlocks.CELESTE_PLANKS)
+    public static final BlockFamily CELESTE_PLANKS = register(AtModBlocks.CELESTE_PLANKS)
             //.slab()
             //.stairs()
             //.fence()
@@ -32,7 +32,7 @@ public class ModBlockFamilies
             //.wall()
             //.button()
             //.pressurePlate()
-            .door(ModBlocks.CELESTE_WOOD_DOOR)
+            .door(AtModBlocks.CELESTE_WOOD_DOOR)
             //.trapdoor()
             .unlockCriterionName("has_celeste_planks")
             .build();

@@ -6,14 +6,14 @@ import net.minecraft.block.Block;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.registry.tag.TagKey;
-import xintao.azuretraveller.tag.ModBlockTags;
+import xintao.azuretraveller.tag.AtModBlockTags;
 
-public enum ModToolMaterials implements ToolMaterial 
+public enum AtModToolMaterials implements ToolMaterial 
 {
-    OBSIDIAN(ModBlockTags.INCORRECT_FOR_OBSIDIAN_TOOL, 2048, 8.0f, 2.5f, 10,
-            () -> Ingredient.ofItems(ModItems.OBSIDIAN_INGOT)), 
-    MYTHRIL(ModBlockTags.INCORRECT_FOR_MYTHRIL_TOOL, 1200, 10.0f, 5.0f, 18,
-            () -> Ingredient.ofItems(ModItems.MYTHRIL_INGOT));
+    OBSIDIAN(AtModBlockTags.INCORRECT_FOR_OBSIDIAN_TOOL, 2048, 8.0f, 2.5f, 10,
+            () -> Ingredient.ofItems(AtModItems.OBSIDIAN_INGOT)), 
+    MYTHRIL(AtModBlockTags.INCORRECT_FOR_MYTHRIL_TOOL, 1200, 10.0f, 5.0f, 18,
+            () -> Ingredient.ofItems(AtModItems.MYTHRIL_INGOT));
     
     private final TagKey<Block> inverseTag;
     private final int itemDurability;
@@ -22,7 +22,7 @@ public enum ModToolMaterials implements ToolMaterial
     private final int enchantability;
     private final Supplier<Ingredient> repairIngredient;
 
-    ModToolMaterials(TagKey<Block> inverseTag, int itemDurability, float miningSpeed, float attackDamage, int enchantability, Supplier<Ingredient> repairIngredient) 
+    AtModToolMaterials(TagKey<Block> inverseTag, int itemDurability, float miningSpeed, float attackDamage, int enchantability, Supplier<Ingredient> repairIngredient) 
     {
         this.inverseTag = inverseTag;
         this.itemDurability = itemDurability;

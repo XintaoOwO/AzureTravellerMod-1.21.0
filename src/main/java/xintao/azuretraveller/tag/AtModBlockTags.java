@@ -6,7 +6,7 @@ import net.minecraft.registry.tag.TagKey;
 import net.minecraft.util.Identifier;
 import xintao.azuretraveller.AzureTraveller;
 
-public class ModBlockTags 
+public class AtModBlockTags 
 {
     //public static final TagKey<Block> ORE_LIST = of("ore_list");
     //public static final TagKey<Block> NEEDS_OBSIDIAN_TOOL = of("needs_obsidian_tool");
