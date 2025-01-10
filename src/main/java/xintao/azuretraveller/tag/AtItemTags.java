@@ -6,7 +6,7 @@ import net.minecraft.registry.tag.TagKey;
 import net.minecraft.util.Identifier;
 import xintao.azuretraveller.AzureTraveller;
 
-public class AtModItemTags 
+public class AtItemTags 
 {
     public static final TagKey<Item> SUGAR_REFINING_TAG = of("sugar_refining_tag");
     

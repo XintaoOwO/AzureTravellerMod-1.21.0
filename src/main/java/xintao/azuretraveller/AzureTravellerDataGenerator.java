@@ -11,12 +11,12 @@ public class AzureTravellerDataGenerator implements DataGeneratorEntrypoint
 	{
 		FabricDataGenerator.Pack pack = fabricDataGenerator.createPack();
 		
-		pack.addProvider(AtModBlockTagProvider::new);
-		pack.addProvider(AtModItemTagProvider::new);
-		pack.addProvider(AtModLangEnProvider::new);
-		pack.addProvider(AtModLangZhProvider::new);
-		pack.addProvider(AtModLootTableProvider::new);
-		pack.addProvider(AtModModelProvider::new);
-		pack.addProvider(AtModRecipeProvider::new);
+		pack.addProvider(AtBlockTagProvider::new);
+		pack.addProvider(AtItemTagProvider::new);
+		pack.addProvider(AtLangEnProvider::new);
+		pack.addProvider(AtLangZhProvider::new);
+		pack.addProvider(AtLootTableProvider::new);
+		pack.addProvider(AtModelProvider::new);
+		pack.addProvider(AtRecipeProvider::new);
 	}
 }

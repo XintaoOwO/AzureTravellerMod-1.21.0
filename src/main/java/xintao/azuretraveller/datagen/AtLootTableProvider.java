@@ -14,15 +14,15 @@ import net.minecraft.loot.function.SetCountLootFunction;
 import net.minecraft.loot.provider.number.UniformLootNumberProvider;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.RegistryWrapper;
-import xintao.azuretraveller.block.AtModBlocks;
-import xintao.azuretraveller.item.AtModItems;
+import xintao.azuretraveller.block.AtBlocks;
+import xintao.azuretraveller.item.AtItems;
 
 import java.util.concurrent.CompletableFuture;
 
-public class AtModLootTableProvider extends FabricBlockLootTableProvider
+public class AtLootTableProvider extends FabricBlockLootTableProvider
 {
 
-    public AtModLootTableProvider(FabricDataOutput dataOutput, CompletableFuture<RegistryWrapper.WrapperLookup> registryLookup)
+    public AtLootTableProvider(FabricDataOutput dataOutput, CompletableFuture<RegistryWrapper.WrapperLookup> registryLookup)
     {
         super(dataOutput, registryLookup);
     }
@@ -30,14 +30,14 @@ public class AtModLootTableProvider extends FabricBlockLootTableProvider
     @Override
     public void generate()
     {
-        addDrop(AtModBlocks.MYTHRIL_BLOCK);
-        addDrop(AtModBlocks.RAW_MYTHRIL_BLOCK);
-        addDrop(AtModBlocks.SILVER_BLOCK);
-        addDrop(AtModBlocks.RAW_SILVER_BLOCK);
-        addDrop(AtModBlocks.CELESTITE_BLOCK);
-        addDrop(AtModBlocks.SILVER_ORE, modOreDrop(AtModBlocks.SILVER_ORE, AtModItems.RAW_SILVER));
-        addDrop(AtModBlocks.MYTHRIL_ORE, modOreDrop(AtModBlocks.MYTHRIL_ORE, AtModItems.RAW_MYTHRIL));
-        addDrop(AtModBlocks.CELESTITE_ORE, modOreDrop(AtModBlocks.CELESTITE_ORE, AtModItems.RAW_CELESTITE));
+        addDrop(AtBlocks.MYTHRIL_BLOCK);
+        addDrop(AtBlocks.RAW_MYTHRIL_BLOCK);
+        addDrop(AtBlocks.SILVER_BLOCK);
+        addDrop(AtBlocks.RAW_SILVER_BLOCK);
+        addDrop(AtBlocks.CELESTITE_BLOCK);
+        addDrop(AtBlocks.SILVER_ORE, modOreDrop(AtBlocks.SILVER_ORE, AtItems.RAW_SILVER));
+        addDrop(AtBlocks.MYTHRIL_ORE, modOreDrop(AtBlocks.MYTHRIL_ORE, AtItems.RAW_MYTHRIL));
+        addDrop(AtBlocks.CELESTITE_ORE, modOreDrop(AtBlocks.CELESTITE_ORE, AtItems.RAW_CELESTITE));
     }
 
     public LootTable.Builder modOreDrop(Block drop, Item dropItem) 

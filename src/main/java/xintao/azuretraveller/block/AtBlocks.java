@@ -8,7 +8,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import xintao.azuretraveller.AzureTraveller;
 
-public class AtModBlocks 
+public class AtBlocks 
 {
     public static final Block MYTHRIL_BLOCK = register("mythril_block", 
             new Block(AbstractBlock.Settings.create().requiresTool().strength(3.0f, 3.0f)));
