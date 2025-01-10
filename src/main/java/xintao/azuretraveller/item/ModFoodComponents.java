@@ -19,10 +19,4 @@ public class ModFoodComponents
     public static final FoodComponent BLUEBERRY = new FoodComponent.Builder().nutrition(1).saturationModifier(0.0f)
             .statusEffect(new StatusEffectInstance(StatusEffects.NIGHT_VISION, 600), 1.0f)
             .alwaysEdible().build();
-    
-    public static void registerModFoodComponent()
-    {
-        AzureTraveller.LOGGER.info("Registering Food Components");
-        AzureTraveller.LOGGER.info("正在注册食物组件");
-    }
 }

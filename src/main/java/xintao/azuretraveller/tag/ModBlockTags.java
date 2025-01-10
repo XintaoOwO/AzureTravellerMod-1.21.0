@@ -18,9 +18,4 @@ public class ModBlockTags
     {
         return TagKey.of(RegistryKeys.BLOCK, Identifier.of(AzureTraveller.MOD_ID, id));
     }
-    
-    public static void registerModBlockTag()
-    {
-        AzureTraveller.LOGGER.info("Registering Block Tags");
-    }
 }

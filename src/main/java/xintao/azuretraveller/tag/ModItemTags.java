@@ -14,9 +14,4 @@ public class ModItemTags
     {
         return TagKey.of(RegistryKeys.ITEM, Identifier.of(AzureTraveller.MOD_ID, id));
     }
-    
-    public static void registerModItemTag()
-    {
-        AzureTraveller.LOGGER.info("Registering Item Tags");
-    }
 }
