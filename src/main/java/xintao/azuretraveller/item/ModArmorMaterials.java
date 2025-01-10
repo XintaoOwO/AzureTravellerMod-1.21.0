@@ -11,7 +11,6 @@ import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Util;
 import xintao.azuretraveller.AzureTraveller;
-
 import java.util.EnumMap;
 import java.util.List;
 import java.util.function.Supplier;
