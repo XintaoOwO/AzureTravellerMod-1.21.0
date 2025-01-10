@@ -29,7 +29,7 @@ public class ModArmorMaterials
                     map.put(ArmorItem.Type.BODY, 11);
                 }
             ), 
-            15, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 3.0f, 0.1f, 
+            15, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 3.0f, 0.1f, 
                     () -> Ingredient.ofItems(ModItems.MYTHRIL_INGOT));
 
     public static final RegistryEntry<ArmorMaterial> OBSIDIAN =
@@ -43,7 +43,7 @@ public class ModArmorMaterials
                     map.put(ArmorItem.Type.BODY, 11);
                 }
             ),
-                    15, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 1.5f, 0.0f,
+                    15, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 1.5f, 0.0f,
                     () -> Ingredient.ofItems(ModItems.OBSIDIAN_INGOT));
     
     private static RegistryEntry<ArmorMaterial> register(
