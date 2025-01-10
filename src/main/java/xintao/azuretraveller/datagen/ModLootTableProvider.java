@@ -34,13 +34,12 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider
         addDrop(ModBlocks.SILVER_BLOCK);
         addDrop(ModBlocks.RAW_SILVER_BLOCK);
         addDrop(ModBlocks.CELESTITE_BLOCK);
-        //addDrop(ModBlocks.MYTHRIL_ORE, oreDrops(ModBlocks.MYTHRIL_ORE, ModItems.RAW_MYTHRIL));
-        addDrop(ModBlocks.SILVER_ORE, modOreDrops(ModBlocks.SILVER_ORE, ModItems.RAW_SILVER));
-        addDrop(ModBlocks.MYTHRIL_ORE, modOreDrops(ModBlocks.MYTHRIL_ORE, ModItems.RAW_MYTHRIL));
-        addDrop(ModBlocks.CELESTITE_ORE, modOreDrops(ModBlocks.CELESTITE_ORE, ModItems.RAW_CELESTITE));
+        addDrop(ModBlocks.SILVER_ORE, modOreDrop(ModBlocks.SILVER_ORE, ModItems.RAW_SILVER));
+        addDrop(ModBlocks.MYTHRIL_ORE, modOreDrop(ModBlocks.MYTHRIL_ORE, ModItems.RAW_MYTHRIL));
+        addDrop(ModBlocks.CELESTITE_ORE, modOreDrop(ModBlocks.CELESTITE_ORE, ModItems.RAW_CELESTITE));
     }
 
-    public LootTable.Builder modOreDrops(Block drop, Item dropItem) 
+    public LootTable.Builder modOreDrop(Block drop, Item dropItem) 
     {
         RegistryWrapper.Impl<Enchantment> impl = this.registryLookup.getWrapperOrThrow(RegistryKeys.ENCHANTMENT);
         return this.dropsWithSilkTouch(
