@@ -19,7 +19,7 @@ public class AtArmorItem extends ArmorItem
     private static final Map<ArmorMaterial, StatusEffectInstance> MAP = 
             (new ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance>())
                     .put(AtArmorMaterials.MYTHRIL.value(), 
-                            new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 200, 
+                            new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 10, 
                                     1, false, false, true)).build();
     
     
