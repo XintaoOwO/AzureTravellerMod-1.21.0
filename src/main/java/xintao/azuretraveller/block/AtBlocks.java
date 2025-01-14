@@ -7,6 +7,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import xintao.azuretraveller.AzureTraveller;
+import xintao.azuretraveller.block.crop.StrawberryCropBlock;
 
 public class AtBlocks 
 {
@@ -53,6 +54,10 @@ public class AtBlocks
     public static final Block CELESTE_WOOD_DOOR = register("celeste_wood_door", 
             new DoorBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(CELESTE_PLANKS).nonOpaque().burnable()));
     
+    public static final Block STRAWBERRY_CROP = Registry.register(Registries.BLOCK, 
+            Identifier.of(AzureTraveller.MOD_ID, "strawberry_crop"), 
+            new StrawberryCropBlock(AbstractBlock.Settings.copy(Blocks.WHEAT)));
+    
     
     public static void registerBlockItem(String id, Block block)
     {
@@ -73,7 +78,6 @@ public class AtBlocks
     
     public static void registerModBlock()
     {
-        AzureTraveller.LOGGER.info("Registering Blocks");
-        AzureTraveller.LOGGER.info("正在注册方块");
+        
     }
 }

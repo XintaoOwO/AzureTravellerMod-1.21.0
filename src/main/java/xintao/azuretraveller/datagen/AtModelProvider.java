@@ -7,6 +7,7 @@ import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
 import net.minecraft.data.family.BlockFamily;
 import net.minecraft.item.ArmorItem;
+import net.minecraft.state.property.Properties;
 import xintao.azuretraveller.block.AtBlockFamilies;
 import xintao.azuretraveller.block.AtBlocks;
 import xintao.azuretraveller.item.AtItems;
@@ -35,6 +36,8 @@ public class AtModelProvider extends FabricModelProvider
         blockStateModelGenerator.registerSimpleCubeAll(AtBlocks.CELESTITE_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(AtBlocks.CELESTITE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(AtBlocks.CELESTE_WOOD);
+        
+        blockStateModelGenerator.registerCrop(AtBlocks.STRAWBERRY_CROP, Properties.AGE_3, 0, 1, 2, 3);
     }
 
     @Override

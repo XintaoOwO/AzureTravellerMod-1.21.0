@@ -5,6 +5,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import xintao.azuretraveller.AzureTraveller;
+import xintao.azuretraveller.block.AtBlocks;
 import xintao.azuretraveller.util.AtArmorItem;
 
 public class AtItems 
@@ -74,6 +75,9 @@ public class AtItems
             new Item.Settings().attributeModifiers(HoeItem.createAttributeModifiers(AtToolMaterials.OBSIDIAN, 
                     -3.0f, 0.0f))));
     
+    public static final Item STRAWBERRY_SEEDS = registerItem("strawberry_seeds", 
+            new AliasedBlockItem(AtBlocks.STRAWBERRY_CROP, new Item.Settings()));
+
     private static Item registerItem(String id, Item item)
     {
         return Registry.register(Registries.ITEM, Identifier.of(AzureTraveller.MOD_ID, id), item);
@@ -81,7 +85,6 @@ public class AtItems
 
     public static void registerModItem()
     {
-        AzureTraveller.LOGGER.info("Registering Items");
-        AzureTraveller.LOGGER.info("正在注册物品");
+        
     }
 }

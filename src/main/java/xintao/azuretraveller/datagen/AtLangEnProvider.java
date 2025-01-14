@@ -22,7 +22,7 @@ public class AtLangEnProvider extends FabricLanguageProvider
         translationBuilder.add("itemGroup.at_decorative_blocks", "Azure Traveller Decorative Blocks");
         translationBuilder.add("itemGroup.at_materials", "Azure Traveller Materials");
         translationBuilder.add("itemGroup.at_tools_armors", "Azure Traveller Tools & Armors");
-        translationBuilder.add("itemGroup.at_food", "Azure Traveller Food");
+        translationBuilder.add("itemGroup.at_food_crops", "Azure Traveller Food & Crops");
         
         translationBuilder.add(AtItems.SILVER_INGOT, "Silver Ingot");
         translationBuilder.add(AtItems.MYTHRIL_INGOT, "Mythril Ingot");
@@ -54,6 +54,7 @@ public class AtLangEnProvider extends FabricLanguageProvider
         translationBuilder.add(AtItems.BLUEBERRY, "Blueberry");
         translationBuilder.add(AtItems.STRAWBERRY, "Strawberry");
         translationBuilder.add(AtItems.LUCKY_APPLE, "Lucky Apple");
+        translationBuilder.add(AtItems.STRAWBERRY_SEEDS, "Strawberry Seeds");
         
         translationBuilder.add(AtBlocks.SILVER_ORE, "Silver Ore");
         translationBuilder.add(AtBlocks.SILVER_BLOCK, "Silver Block");

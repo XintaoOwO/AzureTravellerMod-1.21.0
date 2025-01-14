@@ -22,7 +22,7 @@ public class AtLangZhProvider extends FabricLanguageProvider
         translationBuilder.add("itemGroup.at_decorative_blocks", "蔚蓝旅行家 装饰性方块");
         translationBuilder.add("itemGroup.at_materials", "蔚蓝旅行家 材料");
         translationBuilder.add("itemGroup.at_tools_armors", "蔚蓝旅行家 工具装备");
-        translationBuilder.add("itemGroup.at_food", "蔚蓝旅行家 食物");
+        translationBuilder.add("itemGroup.at_food_crops", "蔚蓝旅行家 食物与农作物");
         
         translationBuilder.add(AtItems.SILVER_INGOT, "银锭");
         translationBuilder.add(AtItems.MYTHRIL_INGOT, "秘银锭");
@@ -54,6 +54,7 @@ public class AtLangZhProvider extends FabricLanguageProvider
         translationBuilder.add(AtItems.BLUEBERRY, "蓝莓");
         translationBuilder.add(AtItems.STRAWBERRY, "草莓");
         translationBuilder.add(AtItems.LUCKY_APPLE, "幸运果");
+        translationBuilder.add(AtItems.STRAWBERRY_SEEDS, "草莓种子");
 
         translationBuilder.add(AtBlocks.SILVER_ORE, "银矿石");
         translationBuilder.add(AtBlocks.SILVER_BLOCK, "银块");

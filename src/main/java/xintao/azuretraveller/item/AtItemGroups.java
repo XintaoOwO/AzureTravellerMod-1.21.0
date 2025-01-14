@@ -17,7 +17,7 @@ public class AtItemGroups
     public static final RegistryKey<ItemGroup> AT_Building_Blocks = register("at_building_blocks");
     public static final RegistryKey<ItemGroup> AT_Decorative_Blocks = register("at_decorative_blocks");
     public static final RegistryKey<ItemGroup> AT_Tools_Armors = register("at_tools_armors");
-    public static final RegistryKey<ItemGroup> AT_Food = register("at_food");
+    public static final RegistryKey<ItemGroup> AT_Food_Crops = register("at_food_crops");
     
     private static RegistryKey<ItemGroup> register(String id) 
     {
@@ -122,21 +122,20 @@ public class AtItemGroups
                 .build()
         );
         
-        Registry.register(Registries.ITEM_GROUP, AT_Food, 
+        Registry.register(Registries.ITEM_GROUP, AT_Food_Crops, 
                 ItemGroup.create(null, -1)
-                        .displayName(Text.translatable("itemGroup.at_food"))
+                        .displayName(Text.translatable("itemGroup.at_food_crops"))
                         .icon(() -> new ItemStack(AtItems.STRAWBERRY))
                         .entries((displayContext, entries) ->
                         {
                             entries.add(AtItems.BLUEBERRY);
                             entries.add(AtItems.STRAWBERRY);
                             entries.add(AtItems.LUCKY_APPLE);
+                            
+                            entries.add(AtItems.STRAWBERRY_SEEDS);
                         }
                 )
                 .build()
         );
-    
-        AzureTraveller.LOGGER.info("Registering Item Groups");
-        AzureTraveller.LOGGER.info("正在注册物品分类组");
     }
 }
