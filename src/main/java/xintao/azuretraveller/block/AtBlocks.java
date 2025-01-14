@@ -61,11 +61,12 @@ public class AtBlocks
     
     public static void registerBlockItem(String id, Block block)
     {
-        Item item = Registry.register(Registries.ITEM, Identifier.of(AzureTraveller.MOD_ID, id), 
+        BlockItem item = Registry.register(Registries.ITEM, Identifier.of(AzureTraveller.MOD_ID, id), 
                 new BlockItem(block, new Item.Settings()));
         
-        if (item instanceof BlockItem) {
-            ((BlockItem)item).appendBlocks(Item.BLOCK_ITEMS, item);
+        if (item instanceof BlockItem) 
+        {
+            item.appendBlocks(Item.BLOCK_ITEMS, item);
         }
     }
     
