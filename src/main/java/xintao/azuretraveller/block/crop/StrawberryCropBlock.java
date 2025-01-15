@@ -15,8 +15,8 @@ import xintao.azuretraveller.item.AtItems;
 
 public class StrawberryCropBlock extends CropBlock 
 {
-    public static final int max_age = 3;
-    public static final IntProperty AGE = Properties.AGE_3;
+    private static final int max_age = 3;
+    private static final IntProperty AGE = Properties.AGE_3;
     
     public StrawberryCropBlock(Settings settings) 
     {
