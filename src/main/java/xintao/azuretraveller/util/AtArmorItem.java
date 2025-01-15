@@ -12,15 +12,19 @@ import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.world.World;
 import xintao.azuretraveller.item.AtArmorMaterials;
 
+import java.util.Arrays;
+import java.util.List;
 import java.util.Map;
 
 public class AtArmorItem extends ArmorItem 
 {
-    private static final Map<ArmorMaterial, StatusEffectInstance> MAP = 
-            (new ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance>())
+    private static final Map<ArmorMaterial, List<StatusEffectInstance>> MAP = 
+            (new ImmutableMap.Builder<ArmorMaterial, List<StatusEffectInstance>>())
                     .put(AtArmorMaterials.MYTHRIL.value(), 
-                            new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 10, 
-                                    1, false, false, true)).build();
+                            Arrays.asList(
+                                    new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 
+                                            10, 0, false, false, true)))
+                    .build();
     
     
     public AtArmorItem(RegistryEntry<ArmorMaterial> material, Type type, Settings settings) 
@@ -41,14 +45,17 @@ public class AtArmorItem extends ArmorItem
     
     private void evaluateArmorSet(PlayerEntity player) 
     {
-        for (Map.Entry<ArmorMaterial, StatusEffectInstance> entry : MAP.entrySet())
+        for (Map.Entry<ArmorMaterial, List<StatusEffectInstance>> entry : MAP.entrySet())
         {
             ArmorMaterial material = entry.getKey();
-            StatusEffectInstance effect = entry.getValue();
+            List<StatusEffectInstance> effectInstance = entry.getValue();
 
             if (hasCorrectArmorSet(player, material)) 
             {
-                getArmorEffect(player, effect);
+                for (StatusEffectInstance effect : effectInstance) 
+                {
+                    getArmorEffect(player, effect);
+                }
             }
         }
     }
