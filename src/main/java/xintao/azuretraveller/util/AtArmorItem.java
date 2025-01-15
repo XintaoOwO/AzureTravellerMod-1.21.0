@@ -23,6 +23,8 @@ public class AtArmorItem extends ArmorItem
                     .put(AtArmorMaterials.MYTHRIL.value(), 
                             Arrays.asList(
                                     new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 
+                                            10, 0, false, false, true), 
+                                    new StatusEffectInstance(StatusEffects.ABSORPTION, 
                                             10, 0, false, false, true)))
                     .build();
     
