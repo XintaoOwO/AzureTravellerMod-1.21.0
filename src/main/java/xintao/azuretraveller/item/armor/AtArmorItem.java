@@ -1,4 +1,4 @@
-package xintao.azuretraveller.util;
+package xintao.azuretraveller.item.armor;
 
 import com.google.common.collect.ImmutableMap;
 import net.minecraft.entity.Entity;

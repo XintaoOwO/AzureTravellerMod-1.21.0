@@ -6,7 +6,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import xintao.azuretraveller.AzureTraveller;
 import xintao.azuretraveller.block.AtBlocks;
-import xintao.azuretraveller.util.AtArmorItem;
+import xintao.azuretraveller.item.armor.AtArmorItem;
 
 public class AtItems 
 {
