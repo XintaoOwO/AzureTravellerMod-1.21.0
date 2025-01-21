@@ -2,8 +2,8 @@
 	"schemaVersion": 1,
 	"id": "azuretraveller",
 	"version": "${version}",
-	"name": "AzureTraveller",
-	"description": "Test mod for Fabric MC 1.21.",
+	"name": "Azure Traveller",
+	"description": "An adventure mod for Fabric Minecraft 1.21.",
 	"authors": [
 		"xintao"
 	],
