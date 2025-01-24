@@ -85,6 +85,8 @@ public class AtItemGroups
                             entries.add(AtBlocks.MYTHRIL_PRESSURE_PLATE);
                             entries.add(AtBlocks.MYTHRIL_DOOR);
                             entries.add(AtBlocks.MYTHRIL_TRAPDOOR);
+                            
+                            entries.add(AtBlocks.OBSIDIAN_CHEST);
                         }
                 )
                 .build()
