@@ -8,6 +8,8 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import xintao.azuretraveller.AzureTraveller;
 import xintao.azuretraveller.block.crop.StrawberryCropBlock;
+import xintao.azuretraveller.block.fn.ObsidianChestBlock;
+import xintao.azuretraveller.entity.AtBlockEntities;
 
 public class AtBlocks 
 {
@@ -53,6 +55,10 @@ public class AtBlocks
             new TrapdoorBlock(BlockSetType.IRON, AbstractBlock.Settings.copy(MYTHRIL_BLOCK).nonOpaque()));
     public static final Block CELESTE_WOOD_DOOR = register("celeste_wood_door", 
             new DoorBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(CELESTE_PLANKS).nonOpaque().burnable()));
+    
+    public static final Block OBSIDIAN_CHEST = register("obsidian_chest", 
+            new ObsidianChestBlock(AbstractBlock.Settings.copy(Blocks.CHEST),
+                    () -> AtBlockEntities.OBSIDIAN_CHEST_BLOCK_ENTITY));
     
     public static final Block STRAWBERRY_CROP = Registry.register(Registries.BLOCK, 
             Identifier.of(AzureTraveller.MOD_ID, "strawberry_crop"), 
