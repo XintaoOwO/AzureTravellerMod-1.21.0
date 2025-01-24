@@ -29,7 +29,7 @@ public class ObsidianChestBlockEntity extends LootableContainerBlockEntity
     @Override
     protected Text getContainerName() 
     {
-        return Text.translatable("container.obsidian_chest");
+        return Text.translatable("container.chest");
     }
 
     @Override
