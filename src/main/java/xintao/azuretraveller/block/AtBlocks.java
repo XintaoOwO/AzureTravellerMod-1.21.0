@@ -57,7 +57,7 @@ public class AtBlocks
             new DoorBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(CELESTE_PLANKS).nonOpaque().burnable()));
     
     public static final Block OBSIDIAN_CHEST = register("obsidian_chest", 
-            new ObsidianChestBlock(AbstractBlock.Settings.copy(Blocks.CHEST),
+            new ObsidianChestBlock(AbstractBlock.Settings.copy(Blocks.CHEST).nonOpaque(),
                     () -> AtBlockEntities.OBSIDIAN_CHEST_BLOCK_ENTITY));
     
     public static final Block STRAWBERRY_CROP = Registry.register(Registries.BLOCK, 
