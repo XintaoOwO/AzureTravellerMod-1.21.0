@@ -78,5 +78,7 @@ public class AtLangZhProvider extends FabricLanguageProvider
         translationBuilder.add(AtBlocks.MYTHRIL_DOOR, "秘银门");
         translationBuilder.add(AtBlocks.MYTHRIL_TRAPDOOR, "秘银活板门");
         translationBuilder.add(AtBlocks.CELESTE_WOOD_DOOR, "天蓝木门");
+        
+        translationBuilder.add(AtBlocks.OBSIDIAN_CHEST, "黑曜石箱子");
     }
 }

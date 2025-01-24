@@ -78,5 +78,7 @@ public class AtLangEnProvider extends FabricLanguageProvider
         translationBuilder.add(AtBlocks.MYTHRIL_DOOR, "Mythril Door");
         translationBuilder.add(AtBlocks.MYTHRIL_TRAPDOOR, "Mythril Trapdoor");
         translationBuilder.add(AtBlocks.CELESTE_WOOD_DOOR, "Celeste Wood Door");
+        
+        translationBuilder.add(AtBlocks.OBSIDIAN_CHEST, "Obsidian Chest");
     }
 }

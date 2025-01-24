@@ -4,7 +4,6 @@ import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import xintao.azuretraveller.block.AtBlocks;
-import xintao.azuretraveller.entity.AtBlockEntities;
 import xintao.azuretraveller.item.AtItemGroups;
 import xintao.azuretraveller.item.AtItems;
 
@@ -26,7 +25,6 @@ public class AzureTraveller implements ModInitializer
 		AtItems.registerModItem();
 		AtBlocks.registerModBlock();
 		AtItemGroups.registerModItemGroup();
-		//AtBlockEntities.registerModBlockEntity();
 		
 		LOGGER.info("Hello Fabric world!");
 	}
