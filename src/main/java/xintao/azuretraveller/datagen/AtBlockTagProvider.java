@@ -27,14 +27,16 @@ public class AtBlockTagProvider extends FabricTagProvider.BlockTagProvider
                 .add(AtBlocks.MYTHRIL_BLOCK)
                 .add(AtBlocks.RAW_MYTHRIL_BLOCK)
                 .add(AtBlocks.CELESTITE_ORE)
-                .add(AtBlocks.CELESTITE_BLOCK);
+                .add(AtBlocks.CELESTITE_BLOCK)
+                .add(AtBlocks.OBSIDIAN_CHEST);
         
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(AtBlocks.SILVER_ORE)
                 .add(AtBlocks.SILVER_BLOCK)
                 .add(AtBlocks.RAW_SILVER_BLOCK);
         
-        getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL);
+        getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
+                .add(AtBlocks.OBSIDIAN_CHEST);
         /*
         getOrCreateTagBuilder(BlockTags.INCORRECT_FOR_DIAMOND_TOOL)
                 .addTag(ModBlockTags.INCORRECT_FOR_OBSIDIAN_TOOL);
