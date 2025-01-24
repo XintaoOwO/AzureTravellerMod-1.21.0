@@ -37,6 +37,8 @@ public class AtModelProvider extends FabricModelProvider
         blockStateModelGenerator.registerSimpleCubeAll(AtBlocks.CELESTITE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(AtBlocks.CELESTE_WOOD);
         
+        blockStateModelGenerator.registerSimpleState(AtBlocks.OBSIDIAN_CHEST);
+        
         blockStateModelGenerator.registerCrop(AtBlocks.STRAWBERRY_CROP, Properties.AGE_3, 0, 1, 2, 3);
     }
 
