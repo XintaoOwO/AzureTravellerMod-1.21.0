@@ -13,11 +13,11 @@ import xintao.azuretraveller.block.AtBlocks;
 
 public class AtItemGroups 
 {
-    public static final RegistryKey<ItemGroup> AT_Materials = register("at_materials");
-    public static final RegistryKey<ItemGroup> AT_Building_Blocks = register("at_building_blocks");
-    public static final RegistryKey<ItemGroup> AT_Decorative_Blocks = register("at_decorative_blocks");
-    public static final RegistryKey<ItemGroup> AT_Tools_Armors = register("at_tools_armors");
-    public static final RegistryKey<ItemGroup> AT_Food_Crops = register("at_food_crops");
+    private static final RegistryKey<ItemGroup> AT_Materials = register("at_materials");
+    private static final RegistryKey<ItemGroup> AT_Building_Blocks = register("at_building_blocks");
+    private static final RegistryKey<ItemGroup> AT_Decorative_Blocks = register("at_decorative_blocks");
+    private static final RegistryKey<ItemGroup> AT_Tools_Armors = register("at_tools_armors");
+    private static final RegistryKey<ItemGroup> AT_Food_Crops = register("at_food_crops");
     
     private static RegistryKey<ItemGroup> register(String id) 
     {
