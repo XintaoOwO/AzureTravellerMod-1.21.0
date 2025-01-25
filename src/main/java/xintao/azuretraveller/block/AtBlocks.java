@@ -1,10 +1,12 @@
 package xintao.azuretraveller.block;
 
 import net.minecraft.block.*;
+import net.minecraft.block.enums.NoteBlockInstrument;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import xintao.azuretraveller.AzureTraveller;
 import xintao.azuretraveller.block.crop.StrawberryCropBlock;
@@ -29,12 +31,23 @@ public class AtBlocks
             new Block(AbstractBlock.Settings.create().requiresTool().strength(3.0f, 3.0f)));
     public static final Block RAW_SILVER_BLOCK = register("raw_silver_block",
             new Block(AbstractBlock.Settings.create().requiresTool().strength(3.0f, 3.0f)));
-    public static final Block CELESTE_LOG = register("celeste_log", 
-            new Block(AbstractBlock.Settings.create()));
+    
+    public static final Block CELESTE_LOG = register("celeste_log", createLogBlock());
+    
     public static final Block CELESTE_WOOD = register("celeste_wood", 
-            new Block(AbstractBlock.Settings.create()));
+            new Block(AbstractBlock.Settings.copy(Blocks.OAK_WOOD)));
+    
     public static final Block CELESTE_PLANKS = register("celeste_planks", 
-            new Block(AbstractBlock.Settings.create()));
+            new Block(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)));
+
+    public static final Block STRIPPED_CELESTE_LOG = register("stripped_celeste_log",
+            createLogBlock());
+    public static final Block STRIPPED_CELESTE_WOOD = register("stripped_celeste_wood", 
+            new Block(AbstractBlock.Settings.copy(Blocks.STRIPPED_OAK_WOOD)));
+    
+    public static final Block CELESTE_LEAVES = register("celeste_leaves", 
+            new LeavesBlock(AbstractBlock.Settings.copy(Blocks.OAK_LEAVES)));
+    
     public static final Block MYTHRIL_SLAB = register("mythril_slab", 
             new SlabBlock(AbstractBlock.Settings.copy(MYTHRIL_BLOCK)));
     public static final Block MYTHRIL_FENCE = register("mythril_fence",
@@ -83,7 +96,18 @@ public class AtBlocks
         
         return Registry.register(Registries.BLOCK, Identifier.of(AzureTraveller.MOD_ID, id), block);
     }
-    
+
+    public static Block createLogBlock() 
+    {
+        return new PillarBlock(
+                AbstractBlock.Settings.create()
+                        .instrument(NoteBlockInstrument.BASS)
+                        .strength(2.0F)
+                        .sounds(BlockSoundGroup.WOOD)
+                        .burnable()
+        );
+    }
+
     public static void registerModBlock()
     {
         

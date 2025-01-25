@@ -53,6 +53,8 @@ public class AtItemGroups
                             entries.add(AtBlocks.CELESTE_LOG);
                             entries.add(AtBlocks.CELESTE_WOOD);
                             entries.add(AtBlocks.CELESTE_PLANKS);
+                            entries.add(AtBlocks.STRIPPED_CELESTE_LOG);
+                            entries.add(AtBlocks.STRIPPED_CELESTE_WOOD);
                             
                             entries.add(AtBlocks.SILVER_ORE);
                             entries.add(AtBlocks.MYTHRIL_ORE);
@@ -76,6 +78,8 @@ public class AtItemGroups
                         .icon(() -> new ItemStack(AtBlocks.MYTHRIL_FENCE))
                         .entries((displayContext, entries) ->
                         {
+                            entries.add(AtBlocks.CELESTE_LEAVES);
+                            
                             entries.add(AtBlocks.CELESTE_WOOD_DOOR);
                             
                             entries.add(AtBlocks.MYTHRIL_FENCE);

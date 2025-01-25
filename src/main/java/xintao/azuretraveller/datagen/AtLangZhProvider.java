@@ -67,6 +67,9 @@ public class AtLangZhProvider extends FabricLanguageProvider
         translationBuilder.add(AtBlocks.CELESTE_LOG, "天蓝木原木");
         translationBuilder.add(AtBlocks.CELESTE_WOOD, "天蓝木");
         translationBuilder.add(AtBlocks.CELESTE_PLANKS, "天蓝木板");
+        translationBuilder.add(AtBlocks.CELESTE_LEAVES, "天蓝木树叶");
+        translationBuilder.add(AtBlocks.STRIPPED_CELESTE_LOG, "去皮天蓝木原木");
+        translationBuilder.add(AtBlocks.STRIPPED_CELESTE_WOOD, "去皮天蓝木");
         
         translationBuilder.add(AtBlocks.MYTHRIL_SLAB, "秘银台阶");
         translationBuilder.add(AtBlocks.MYTHRIL_STAIRS, "秘银楼梯");

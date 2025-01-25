@@ -37,6 +37,7 @@ public class AtBlockTagProvider extends FabricTagProvider.BlockTagProvider
         
         getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(AtBlocks.OBSIDIAN_CHEST);
+        
         /*
         getOrCreateTagBuilder(BlockTags.INCORRECT_FOR_DIAMOND_TOOL)
                 .addTag(ModBlockTags.INCORRECT_FOR_OBSIDIAN_TOOL);
@@ -70,6 +71,13 @@ public class AtBlockTagProvider extends FabricTagProvider.BlockTagProvider
                 .add(ModBlocks.MYTHRIL_ORE)
                 .add(ModBlocks.CELESTITE_ORE);
         */
+        
+        getOrCreateTagBuilder(BlockTags.LOGS_THAT_BURN)
+                .add(AtBlocks.CELESTE_LOG)
+                .add(AtBlocks.CELESTE_WOOD)
+                .add(AtBlocks.STRIPPED_CELESTE_LOG)
+                .add(AtBlocks.STRIPPED_CELESTE_WOOD);
+        
         getOrCreateTagBuilder(BlockTags.FENCES)
                 .add(AtBlocks.MYTHRIL_FENCE);
         /*

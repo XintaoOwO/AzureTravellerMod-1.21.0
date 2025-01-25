@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.item.Items;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.ItemTags;
+import xintao.azuretraveller.block.AtBlocks;
 import xintao.azuretraveller.item.AtItems;
 import xintao.azuretraveller.tag.AtItemTags;
 
@@ -22,6 +23,12 @@ public class AtItemTagProvider extends FabricTagProvider.ItemTagProvider
     {
         getOrCreateTagBuilder(AtItemTags.SUGAR_REFINING_TAG)
                 .add(Items.BEETROOT);
+        
+        getOrCreateTagBuilder(ItemTags.LOGS_THAT_BURN)
+                .add(AtBlocks.CELESTE_LOG.asItem())
+                .add(AtBlocks.CELESTE_WOOD.asItem())
+                .add(AtBlocks.STRIPPED_CELESTE_LOG.asItem())
+                .add(AtBlocks.STRIPPED_CELESTE_WOOD.asItem());
         
         getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR)
                 .add(AtItems.OBSIDIAN_HELMET)
