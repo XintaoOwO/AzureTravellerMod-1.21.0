@@ -33,7 +33,6 @@ public class AtBlocks
             new Block(AbstractBlock.Settings.create().requiresTool().strength(3.0f, 3.0f)));
     
     public static final Block CELESTE_LOG = register("celeste_log", createLogBlock());
-    
     public static final Block CELESTE_WOOD = register("celeste_wood", 
             new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_WOOD)));
     
