@@ -19,13 +19,6 @@ public class AtBlockEntities
     
     private static <T extends BlockEntity> BlockEntityType<T> create(String id, BlockEntityType.Builder<T> builder) 
     {
-        /*
-        if (builder.blocks.isEmpty()) 
-        {
-            LOGGER.warn("Block entity type {} requires at least one valid block to be defined!", id);
-        }
-        */
-
         Type<?> type = Util.getChoiceType(TypeReferences.BLOCK_ENTITY, id);
         
         return Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(AzureTraveller.MOD_ID, id), builder.build(type));
