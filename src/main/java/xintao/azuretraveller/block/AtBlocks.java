@@ -35,7 +35,7 @@ public class AtBlocks
     public static final Block CELESTE_LOG = register("celeste_log", createLogBlock());
     
     public static final Block CELESTE_WOOD = register("celeste_wood", 
-            new Block(AbstractBlock.Settings.copy(Blocks.OAK_WOOD)));
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_WOOD)));
     
     public static final Block CELESTE_PLANKS = register("celeste_planks", 
             new Block(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)));
@@ -43,7 +43,7 @@ public class AtBlocks
     public static final Block STRIPPED_CELESTE_LOG = register("stripped_celeste_log",
             createLogBlock());
     public static final Block STRIPPED_CELESTE_WOOD = register("stripped_celeste_wood", 
-            new Block(AbstractBlock.Settings.copy(Blocks.STRIPPED_OAK_WOOD)));
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_OAK_WOOD)));
     
     public static final Block CELESTE_LEAVES = register("celeste_leaves", 
             new LeavesBlock(AbstractBlock.Settings.copy(Blocks.OAK_LEAVES)));
