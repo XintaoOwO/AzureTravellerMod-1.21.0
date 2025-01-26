@@ -40,6 +40,8 @@ public class AtModelProvider extends FabricModelProvider
         blockStateModelGenerator.registerLog(AtBlocks.STRIPPED_CELESTE_LOG).log(AtBlocks.STRIPPED_CELESTE_LOG).wood(AtBlocks.STRIPPED_CELESTE_WOOD);
         blockStateModelGenerator.registerSimpleCubeAll(AtBlocks.CELESTE_LEAVES);
         
+        blockStateModelGenerator.registerTintableCross(AtBlocks.CELESTE_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
+        
         blockStateModelGenerator.registerSimpleState(AtBlocks.OBSIDIAN_CHEST);
         
         blockStateModelGenerator.registerCrop(AtBlocks.STRAWBERRY_CROP, Properties.AGE_3, 0, 1, 2, 3);
