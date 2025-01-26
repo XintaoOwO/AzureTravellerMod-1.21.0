@@ -68,6 +68,7 @@ public class AtLangEnProvider extends FabricLanguageProvider
         translationBuilder.add(AtBlocks.CELESTE_WOOD, "Celeste Wood");
         translationBuilder.add(AtBlocks.CELESTE_PLANKS, "Celeste Planks");
         translationBuilder.add(AtBlocks.CELESTE_LEAVES, "Celeste Leaves");
+        translationBuilder.add(AtBlocks.CELESTE_SAPLING, "Celeste Sapling");
         translationBuilder.add(AtBlocks.STRIPPED_CELESTE_LOG, "Stripped Celeste Log");
         translationBuilder.add(AtBlocks.STRIPPED_CELESTE_WOOD, "Stripped Celeste Wood");
         
