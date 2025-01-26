@@ -22,6 +22,7 @@ public class AzureTravellerDataGenerator implements DataGeneratorEntrypoint
 		pack.addProvider(AtLootTableProvider::new);
 		pack.addProvider(AtModelProvider::new);
 		pack.addProvider(AtRecipeProvider::new);
+		pack.addProvider(AtWorldGenerator::new);
 	}
 
 	@Override
