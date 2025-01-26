@@ -13,5 +13,6 @@ public class AzureTravellerClient implements ClientModInitializer
         BlockRenderLayerMap.INSTANCE.putBlock(AtBlocks.MYTHRIL_DOOR, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(AtBlocks.MYTHRIL_TRAPDOOR, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(AtBlocks.STRAWBERRY_CROP, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(AtBlocks.CELESTE_SAPLING, RenderLayer.getCutout());
     }
 }

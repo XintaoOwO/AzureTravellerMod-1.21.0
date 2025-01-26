@@ -12,6 +12,7 @@ import xintao.azuretraveller.AzureTraveller;
 import xintao.azuretraveller.block.crop.StrawberryCropBlock;
 import xintao.azuretraveller.block.fn.ObsidianChestBlock;
 import xintao.azuretraveller.entity.AtBlockEntities;
+import xintao.azuretraveller.world.tree.AtSaplingGenerator;
 
 public class AtBlocks 
 {
@@ -46,6 +47,9 @@ public class AtBlocks
     
     public static final Block CELESTE_LEAVES = register("celeste_leaves", 
             new LeavesBlock(AbstractBlock.Settings.copy(Blocks.OAK_LEAVES)));
+    
+    public static final Block CELESTE_SAPLING = register("celeste_sapling", 
+            new SaplingBlock(AtSaplingGenerator.CELESTE_TREE, AbstractBlock.Settings.copy(Blocks.OAK_SAPLING)));
     
     public static final Block MYTHRIL_SLAB = register("mythril_slab", 
             new SlabBlock(AbstractBlock.Settings.copy(MYTHRIL_BLOCK)));
