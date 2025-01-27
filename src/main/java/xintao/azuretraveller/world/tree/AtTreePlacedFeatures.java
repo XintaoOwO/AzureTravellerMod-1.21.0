@@ -28,7 +28,7 @@ public class AtTreePlacedFeatures
         register(featureRegisterable, CELESTE_TREE_PLACED, registryEntryLookup
                 .getOrThrow(AtTreeConfiguredFeatures.CELESTE_TREE_CONFIGURED),
                     VegetationPlacedFeatures.treeModifiersWithWouldSurvive(
-                        PlacedFeatures.createCountExtraModifier(2, 0.1f, 2), 
+                        PlacedFeatures.createCountExtraModifier(1, 0.1f, 2), 
                         AtBlocks.CELESTE_SAPLING
                     )
         );
