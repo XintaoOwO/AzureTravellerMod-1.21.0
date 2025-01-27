@@ -29,7 +29,7 @@ public class AtTreeConfiguredFeatures
                 new StraightTrunkPlacer(5, 2, 0), 
                 BlockStateProvider.of(AtBlocks.CELESTE_LEAVES),
                 // 半径，偏移量，高度
-                new BlobFoliagePlacer(ConstantIntProvider.create(4), ConstantIntProvider.create(2), 2), 
+                new BlobFoliagePlacer(ConstantIntProvider.create(3), ConstantIntProvider.create(2), 3), 
                 new TwoLayersFeatureSize(1, 0, 2)
             )
             .build()
@@ -39,7 +39,7 @@ public class AtTreeConfiguredFeatures
                 BlockStateProvider.of(AtBlocks.PEAR_LOG), 
                 new StraightTrunkPlacer(5, 2, 0), 
                 BlockStateProvider.of(AtBlocks.PEAR_LEAVES), 
-                new BlobFoliagePlacer(ConstantIntProvider.create(4), ConstantIntProvider.create(2), 2), 
+                new BlobFoliagePlacer(ConstantIntProvider.create(3), ConstantIntProvider.create(2), 3), 
                 new TwoLayersFeatureSize(1, 0, 2)
             )
             .build()
@@ -49,7 +49,7 @@ public class AtTreeConfiguredFeatures
                 BlockStateProvider.of(AtBlocks.PEACH_LOG),
                 new StraightTrunkPlacer(5, 2, 0),
                 BlockStateProvider.of(AtBlocks.PEACH_LEAVES),
-                new BlobFoliagePlacer(ConstantIntProvider.create(4), ConstantIntProvider.create(2), 2),
+                new BlobFoliagePlacer(ConstantIntProvider.create(3), ConstantIntProvider.create(2), 3), 
                 new TwoLayersFeatureSize(1, 0, 2)
             )
             .build()
