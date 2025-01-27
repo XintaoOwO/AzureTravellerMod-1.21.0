@@ -57,7 +57,11 @@ public class AtItemGroup
                             entries.add(AtBlocks.PEACH_WOOD);
                             entries.add(AtBlocks.CELESTE_WOOD);
                             entries.add(AtBlocks.CELESTE_PLANKS);
+                            entries.add(AtBlocks.STRIPPED_PEAR_LOG);
+                            entries.add(AtBlocks.STRIPPED_PEACH_LOG);
                             entries.add(AtBlocks.STRIPPED_CELESTE_LOG);
+                            entries.add(AtBlocks.STRIPPED_PEAR_WOOD);
+                            entries.add(AtBlocks.STRIPPED_PEACH_WOOD);
                             entries.add(AtBlocks.STRIPPED_CELESTE_WOOD);
                             
                             entries.add(AtBlocks.SILVER_ORE);

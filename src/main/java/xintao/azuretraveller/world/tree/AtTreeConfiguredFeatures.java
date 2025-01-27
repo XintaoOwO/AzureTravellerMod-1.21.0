@@ -46,11 +46,11 @@ public class AtTreeConfiguredFeatures
         );
 
         register(featureRegisterable, PEACH_TREE_CONFIGURED, Feature.TREE, new TreeFeatureConfig.Builder(
-                        BlockStateProvider.of(AtBlocks.PEACH_LOG),
-                        new StraightTrunkPlacer(5, 2, 0),
-                        BlockStateProvider.of(AtBlocks.PEACH_LEAVES),
-                        new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(2), 2),
-                        new TwoLayersFeatureSize(1, 0, 2)
+                BlockStateProvider.of(AtBlocks.PEACH_LOG),
+                new StraightTrunkPlacer(5, 2, 0),
+                BlockStateProvider.of(AtBlocks.PEACH_LEAVES),
+                new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(2), 2),
+                new TwoLayersFeatureSize(1, 0, 2)
             )
             .build()
         );
