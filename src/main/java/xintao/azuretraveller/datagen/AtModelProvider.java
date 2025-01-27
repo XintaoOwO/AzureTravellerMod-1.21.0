@@ -36,10 +36,18 @@ public class AtModelProvider extends FabricModelProvider
         blockStateModelGenerator.registerSimpleCubeAll(AtBlocks.CELESTITE_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(AtBlocks.CELESTITE_BLOCK);
         
-        blockStateModelGenerator.registerLog(AtBlocks.CELESTE_LOG).log(AtBlocks.CELESTE_LOG).wood(AtBlocks.CELESTE_WOOD);
-        blockStateModelGenerator.registerLog(AtBlocks.STRIPPED_CELESTE_LOG).log(AtBlocks.STRIPPED_CELESTE_LOG).wood(AtBlocks.STRIPPED_CELESTE_WOOD);
-        blockStateModelGenerator.registerLog(AtBlocks.PEAR_LOG).log(AtBlocks.PEAR_LOG).wood(AtBlocks.PEAR_WOOD);
-        blockStateModelGenerator.registerLog(AtBlocks.PEACH_LOG).log(AtBlocks.PEACH_LOG).wood(AtBlocks.PEACH_WOOD);
+        blockStateModelGenerator.registerLog(AtBlocks.CELESTE_LOG)
+                .log(AtBlocks.CELESTE_LOG).wood(AtBlocks.CELESTE_WOOD);
+        blockStateModelGenerator.registerLog(AtBlocks.STRIPPED_CELESTE_LOG)
+                .log(AtBlocks.STRIPPED_CELESTE_LOG).wood(AtBlocks.STRIPPED_CELESTE_WOOD);
+        blockStateModelGenerator.registerLog(AtBlocks.PEAR_LOG)
+                .log(AtBlocks.PEAR_LOG).wood(AtBlocks.PEAR_WOOD);
+        blockStateModelGenerator.registerLog(AtBlocks.STRIPPED_PEAR_LOG)
+                .log(AtBlocks.STRIPPED_PEAR_LOG).wood(AtBlocks.STRIPPED_PEAR_WOOD);
+        blockStateModelGenerator.registerLog(AtBlocks.PEACH_LOG)
+                .log(AtBlocks.PEACH_LOG).wood(AtBlocks.PEACH_WOOD);
+        blockStateModelGenerator.registerLog(AtBlocks.STRIPPED_PEACH_LOG)
+                .log(AtBlocks.STRIPPED_PEACH_LOG).wood(AtBlocks.STRIPPED_PEACH_WOOD);
         
         blockStateModelGenerator.registerSimpleCubeAll(AtBlocks.PEAR_LEAVES);
         blockStateModelGenerator.registerSimpleCubeAll(AtBlocks.PEACH_LEAVES);

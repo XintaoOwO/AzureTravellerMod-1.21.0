@@ -26,31 +26,31 @@ public class AtTreeConfiguredFeatures
     {
         register(featureRegisterable, CELESTE_TREE_CONFIGURED, Feature.TREE, new TreeFeatureConfig.Builder(
                 BlockStateProvider.of(AtBlocks.CELESTE_LOG), 
-                new StraightTrunkPlacer(5, 2, 0), 
+                new StraightTrunkPlacer(4, 2, 0), 
                 BlockStateProvider.of(AtBlocks.CELESTE_LEAVES),
                 // 半径，偏移量，高度
                 new BlobFoliagePlacer(ConstantIntProvider.create(3), ConstantIntProvider.create(2), 2), 
-                new TwoLayersFeatureSize(1, 0, 1)
+                new TwoLayersFeatureSize(0, 0, 1)
             )
             .build()
         );
         
         register(featureRegisterable, PEAR_TREE_CONFIGURED, Feature.TREE, new TreeFeatureConfig.Builder(
                 BlockStateProvider.of(AtBlocks.PEAR_LOG), 
-                new StraightTrunkPlacer(5, 2, 0), 
+                new StraightTrunkPlacer(4, 2, 0), 
                 BlockStateProvider.of(AtBlocks.PEAR_LEAVES), 
                 new BlobFoliagePlacer(ConstantIntProvider.create(3), ConstantIntProvider.create(2), 2), 
-                new TwoLayersFeatureSize(1, 0, 1)
+                new TwoLayersFeatureSize(0, 0, 1)
             )
             .build()
         );
 
         register(featureRegisterable, PEACH_TREE_CONFIGURED, Feature.TREE, new TreeFeatureConfig.Builder(
                 BlockStateProvider.of(AtBlocks.PEACH_LOG),
-                new StraightTrunkPlacer(5, 2, 0),
+                new StraightTrunkPlacer(4, 2, 0),
                 BlockStateProvider.of(AtBlocks.PEACH_LEAVES),
                 new BlobFoliagePlacer(ConstantIntProvider.create(3), ConstantIntProvider.create(2), 2), 
-                new TwoLayersFeatureSize(1, 0, 1)
+                new TwoLayersFeatureSize(0, 0, 1)
             )
             .build()
         );
