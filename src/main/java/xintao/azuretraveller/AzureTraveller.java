@@ -8,6 +8,7 @@ import xintao.azuretraveller.block.wood.AtWoodBlock;
 import xintao.azuretraveller.entity.AtBlockEntities;
 import xintao.azuretraveller.item.AtItemGroup;
 import xintao.azuretraveller.item.AtItems;
+import xintao.azuretraveller.world.gen.AtWorldGeneration;
 
 public class AzureTraveller implements ModInitializer
 {
@@ -29,6 +30,7 @@ public class AzureTraveller implements ModInitializer
 		AtItemGroup.registerModItemGroup();
 		AtBlockEntities.registerModBlockEntity();
 		AtWoodBlock.registerModWood();
+		AtWorldGeneration.modWorldGeneration();
 		
 		LOGGER.info("Hello Fabric world!");
 	}
