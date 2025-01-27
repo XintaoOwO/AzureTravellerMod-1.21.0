@@ -2,6 +2,7 @@ package xintao.azuretraveller.block;
 
 import net.minecraft.block.*;
 import net.minecraft.block.enums.NoteBlockInstrument;
+import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -34,22 +35,32 @@ public class AtBlocks
             new Block(AbstractBlock.Settings.create().requiresTool().strength(3.0f, 3.0f)));
     
     public static final Block CELESTE_LOG = register("celeste_log", createLogBlock());
-    public static final Block CELESTE_WOOD = register("celeste_wood", 
-            new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_WOOD)));
+    public static final Block CELESTE_WOOD = register("celeste_wood", createLogBlock());
+    public static final Block PEAR_LOG = register("pear_log", createLogBlock());
+    public static final Block PEAR_WOOD = register("pear_wood", createLogBlock());
+    public static final Block PEACH_LOG = register("peach_log", createLogBlock());
+    public static final Block PEACH_WOOD = register("peach_wood", createLogBlock());
     
     public static final Block CELESTE_PLANKS = register("celeste_planks", 
             new Block(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)));
 
-    public static final Block STRIPPED_CELESTE_LOG = register("stripped_celeste_log",
-            createLogBlock());
-    public static final Block STRIPPED_CELESTE_WOOD = register("stripped_celeste_wood", 
-            new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_OAK_WOOD)));
+    public static final Block STRIPPED_PEAR_LOG = register("stripped_pear_log", createLogBlock());
+    public static final Block STRIPPED_PEAR_WOOD = register("stripped_pear_wood", createLogBlock());
+    public static final Block STRIPPED_PEACH_LOG = register("stripped_peach_log", createLogBlock());
+    public static final Block STRIPPED_PEACH_WOOD = register("stripped_peach_wood", createLogBlock());
+    public static final Block STRIPPED_CELESTE_LOG = register("stripped_celeste_log", createLogBlock());
+    public static final Block STRIPPED_CELESTE_WOOD = register("stripped_celeste_wood", createLogBlock());
     
-    public static final Block CELESTE_LEAVES = register("celeste_leaves", 
-            new LeavesBlock(AbstractBlock.Settings.copy(Blocks.OAK_LEAVES)));
-    
+    public static final Block PEAR_LEAVES = register("pear_leaves", createLeavesBlock(BlockSoundGroup.GRASS));
+    public static final Block PEACH_LEAVES = register("peach_leaves", createLeavesBlock(BlockSoundGroup.GRASS));
+    public static final Block CELESTE_LEAVES = register("celeste_leaves", createLeavesBlock(BlockSoundGroup.GRASS));
+
+    public static final Block PEAR_SAPLING = register("pear_sapling", 
+            new SaplingBlock(AtSaplingGenerator.PEAR_TREE_SAPLING, AbstractBlock.Settings.copy(Blocks.OAK_SAPLING)));
+    public static final Block PEACH_SAPLING = register("peach_sapling", 
+            new SaplingBlock(AtSaplingGenerator.PEACH_TREE_SAPLING, AbstractBlock.Settings.copy(Blocks.OAK_SAPLING)));
     public static final Block CELESTE_SAPLING = register("celeste_sapling", 
-            new SaplingBlock(AtSaplingGenerator.CELESTE_TREE, AbstractBlock.Settings.copy(Blocks.OAK_SAPLING)));
+            new SaplingBlock(AtSaplingGenerator.CELESTE_TREE_SAPLING, AbstractBlock.Settings.copy(Blocks.OAK_SAPLING)));
     
     public static final Block MYTHRIL_SLAB = register("mythril_slab", 
             new SlabBlock(AbstractBlock.Settings.copy(MYTHRIL_BLOCK)));
@@ -108,6 +119,24 @@ public class AtBlocks
                         .strength(2.0F)
                         .sounds(BlockSoundGroup.WOOD)
                         .burnable()
+        );
+    }
+
+    public static Block createLeavesBlock(BlockSoundGroup soundGroup) 
+    {
+        return new LeavesBlock(
+                AbstractBlock.Settings.create()
+                        .mapColor(MapColor.DARK_GREEN)
+                        .strength(0.2F)
+                        .ticksRandomly()
+                        .sounds(soundGroup)
+                        .nonOpaque()
+                        .allowsSpawning(Blocks::canSpawnOnLeaves)
+                        .suffocates(Blocks::never)
+                        .blockVision(Blocks::never)
+                        .burnable()
+                        .pistonBehavior(PistonBehavior.DESTROY)
+                        .solidBlock(Blocks::never)
         );
     }
 

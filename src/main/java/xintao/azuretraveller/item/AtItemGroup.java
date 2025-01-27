@@ -50,7 +50,11 @@ public class AtItemGroup
                         .icon(() -> new ItemStack(AtBlocks.MYTHRIL_BLOCK))
                         .entries((displayContext, entries) ->
                         {
+                            entries.add(AtBlocks.PEAR_LOG);
+                            entries.add(AtBlocks.PEACH_LOG);
                             entries.add(AtBlocks.CELESTE_LOG);
+                            entries.add(AtBlocks.PEAR_WOOD);
+                            entries.add(AtBlocks.PEACH_WOOD);
                             entries.add(AtBlocks.CELESTE_WOOD);
                             entries.add(AtBlocks.CELESTE_PLANKS);
                             entries.add(AtBlocks.STRIPPED_CELESTE_LOG);

@@ -71,6 +71,18 @@ public class AtLangZhProvider extends FabricLanguageProvider
         translationBuilder.add(AtBlocks.CELESTE_SAPLING, "天蓝木树苗");
         translationBuilder.add(AtBlocks.STRIPPED_CELESTE_LOG, "去皮天蓝木原木");
         translationBuilder.add(AtBlocks.STRIPPED_CELESTE_WOOD, "去皮天蓝木");
+        translationBuilder.add(AtBlocks.PEAR_LOG, "梨树原木");
+        translationBuilder.add(AtBlocks.PEAR_WOOD, "梨木");
+        translationBuilder.add(AtBlocks.PEAR_LEAVES, "梨树树叶");
+        translationBuilder.add(AtBlocks.PEAR_SAPLING, "梨树树苗");
+        translationBuilder.add(AtBlocks.STRIPPED_PEAR_LOG, "去皮梨树原木");
+        translationBuilder.add(AtBlocks.STRIPPED_PEAR_WOOD, "去皮梨木");
+        translationBuilder.add(AtBlocks.PEACH_LOG, "桃树原木");
+        translationBuilder.add(AtBlocks.PEACH_WOOD, "桃木");
+        translationBuilder.add(AtBlocks.PEACH_LEAVES, "桃树树叶");
+        translationBuilder.add(AtBlocks.PEACH_SAPLING, "桃树树苗");
+        translationBuilder.add(AtBlocks.STRIPPED_PEACH_LOG, "去皮桃树原木");
+        translationBuilder.add(AtBlocks.STRIPPED_PEACH_WOOD, "去皮桃木");
         
         translationBuilder.add(AtBlocks.MYTHRIL_SLAB, "秘银台阶");
         translationBuilder.add(AtBlocks.MYTHRIL_STAIRS, "秘银楼梯");

@@ -19,6 +19,8 @@ import java.util.List;
 public class AtTreePlacedFeatures 
 {
     public static final RegistryKey<PlacedFeature> CELESTE_TREE_PLACED = of("celeste_tree_placed");
+    public static final RegistryKey<PlacedFeature> PEAR_TREE_PLACED = of("pear_tree_placed");
+    public static final RegistryKey<PlacedFeature> PEACH_TREE_PLACED = of("peach_tree_placed");
 
     public static void bootstrap(Registerable<PlacedFeature> featureRegisterable)
     {
@@ -31,6 +33,22 @@ public class AtTreePlacedFeatures
                         PlacedFeatures.createCountExtraModifier(1, 0.1f, 2), 
                         AtBlocks.CELESTE_SAPLING
                     )
+        );
+
+        register(featureRegisterable, PEAR_TREE_PLACED, registryEntryLookup
+                .getOrThrow(AtTreeConfiguredFeatures.PEAR_TREE_CONFIGURED),
+                    VegetationPlacedFeatures.treeModifiersWithWouldSurvive(
+                        PlacedFeatures.createCountExtraModifier(1, 0.1f, 2),
+                        AtBlocks.PEAR_SAPLING
+                )
+        );
+
+        register(featureRegisterable, PEACH_TREE_PLACED, registryEntryLookup
+                .getOrThrow(AtTreeConfiguredFeatures.PEACH_TREE_CONFIGURED),
+                    VegetationPlacedFeatures.treeModifiersWithWouldSurvive(
+                        PlacedFeatures.createCountExtraModifier(1, 0.1f, 2),
+                        AtBlocks.PEACH_SAPLING
+                )
         );
     }
     

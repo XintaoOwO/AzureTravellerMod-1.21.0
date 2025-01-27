@@ -71,6 +71,18 @@ public class AtLangEnProvider extends FabricLanguageProvider
         translationBuilder.add(AtBlocks.CELESTE_SAPLING, "Celeste Sapling");
         translationBuilder.add(AtBlocks.STRIPPED_CELESTE_LOG, "Stripped Celeste Log");
         translationBuilder.add(AtBlocks.STRIPPED_CELESTE_WOOD, "Stripped Celeste Wood");
+        translationBuilder.add(AtBlocks.PEAR_LOG, "Pear Log");
+        translationBuilder.add(AtBlocks.PEAR_WOOD, "Pear Wood");
+        translationBuilder.add(AtBlocks.PEAR_LEAVES, "Pear Leaves");
+        translationBuilder.add(AtBlocks.PEAR_SAPLING, "Pear Sapling");
+        translationBuilder.add(AtBlocks.STRIPPED_PEAR_LOG, "Stripped Pear Log");
+        translationBuilder.add(AtBlocks.STRIPPED_PEAR_WOOD, "Stripped Pear Wood");
+        translationBuilder.add(AtBlocks.PEACH_LOG, "Peach Log");
+        translationBuilder.add(AtBlocks.PEACH_WOOD, "Peach Wood");
+        translationBuilder.add(AtBlocks.PEACH_LEAVES, "Peach Leaves");
+        translationBuilder.add(AtBlocks.PEACH_SAPLING, "Peach Sapling");
+        translationBuilder.add(AtBlocks.STRIPPED_PEACH_LOG, "Stripped Peach Log");
+        translationBuilder.add(AtBlocks.STRIPPED_PEACH_WOOD, "Stripped Peach Wood");
         
         translationBuilder.add(AtBlocks.MYTHRIL_SLAB, "Mythril Slab");
         translationBuilder.add(AtBlocks.MYTHRIL_STAIRS, "Mythril Stairs");
