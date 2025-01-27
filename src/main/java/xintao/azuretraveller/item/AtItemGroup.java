@@ -82,7 +82,11 @@ public class AtItemGroup
                         .icon(() -> new ItemStack(AtBlocks.MYTHRIL_FENCE))
                         .entries((displayContext, entries) ->
                         {
+                            entries.add(AtBlocks.PEAR_SAPLING);
+                            entries.add(AtBlocks.PEACH_SAPLING);
                             entries.add(AtBlocks.CELESTE_SAPLING);
+                            entries.add(AtBlocks.PEAR_LEAVES);
+                            entries.add(AtBlocks.PEACH_LEAVES);
                             entries.add(AtBlocks.CELESTE_LEAVES);
                             
                             entries.add(AtBlocks.CELESTE_WOOD_DOOR);
