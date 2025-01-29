@@ -52,12 +52,12 @@ public class AtTreePlacedFeatures
         );
     }
     
-    public static RegistryKey<PlacedFeature> of(String id) 
+    private static RegistryKey<PlacedFeature> of(String id) 
     {
         return RegistryKey.of(RegistryKeys.PLACED_FEATURE, Identifier.of(AzureTraveller.MOD_ID, id));
     }
 
-    public static void register(
+    private static void register(
             Registerable<PlacedFeature> featureRegisterable,
             RegistryKey<PlacedFeature> key,
             RegistryEntry<ConfiguredFeature<?, ?>> feature,
@@ -67,7 +67,7 @@ public class AtTreePlacedFeatures
         featureRegisterable.register(key, new PlacedFeature(feature, List.copyOf(modifiers)));
     }
 
-    public static void register(
+    private static void register(
             Registerable<PlacedFeature> featureRegisterable,
             RegistryKey<PlacedFeature> key,
             RegistryEntry<ConfiguredFeature<?, ?>> feature,
