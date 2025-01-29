@@ -11,7 +11,15 @@ public class AtTreeGeneration
     public static void modTreeGeneration()
     {
         BiomeModifications.addFeature(BiomeSelectors
-                .includeByKey(BiomeKeys.PLAINS, BiomeKeys.FOREST, BiomeKeys.FLOWER_FOREST),
+                        .includeByKey(BiomeKeys.PLAINS, BiomeKeys.FOREST, BiomeKeys.FLOWER_FOREST), 
                 GenerationStep.Feature.VEGETAL_DECORATION, AtTreePlacedFeatures.CELESTE_TREE_PLACED);
+
+        BiomeModifications.addFeature(BiomeSelectors
+                        .includeByKey(BiomeKeys.PLAINS, BiomeKeys.FOREST, BiomeKeys.FLOWER_FOREST), 
+                GenerationStep.Feature.VEGETAL_DECORATION, AtTreePlacedFeatures.PEAR_TREE_PLACED);
+
+        BiomeModifications.addFeature(BiomeSelectors
+                        .includeByKey(BiomeKeys.PLAINS, BiomeKeys.FOREST, BiomeKeys.FLOWER_FOREST), 
+                GenerationStep.Feature.VEGETAL_DECORATION, AtTreePlacedFeatures.PEACH_TREE_PLACED);
     }
 }
