@@ -69,6 +69,6 @@ public class AtBiomes
     
     public static void bootstrap(Registerable<Biome> biomeRegisterable)
     {
-        
+        biomeRegisterable.register(FRUIT_FOREST, addFruitForestBiome(biomeRegisterable));
     }
 }
