@@ -41,7 +41,7 @@ public class AtBlockFamilies
     private static BlockFamily.Builder register(Block baseBlock) 
     {
         BlockFamily.Builder builder = new BlockFamily.Builder(baseBlock);
-        BlockFamily blockFamily = (BlockFamily)BASE_BLOCKS_TO_FAMILIES.put(baseBlock, builder.build());
+        BlockFamily blockFamily = BASE_BLOCKS_TO_FAMILIES.put(baseBlock, builder.build());
         if (blockFamily != null) 
         {
             throw new IllegalStateException("Duplicate family definition for " + Registries.BLOCK.getId(baseBlock));
