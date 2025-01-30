@@ -93,7 +93,7 @@ public class AtBlocks
             new StrawberryCropBlock(AbstractBlock.Settings.copy(Blocks.WHEAT)));
     
     
-    public static void registerBlockItem(String id, Block block)
+    private static void registerBlockItem(String id, Block block)
     {
         BlockItem item = Registry.register(Registries.ITEM, Identifier.of(AzureTraveller.MOD_ID, id), 
                 new BlockItem(block, new Item.Settings()));
@@ -104,14 +104,14 @@ public class AtBlocks
         }
     }
     
-    public static Block register(String id, Block block) 
+    private static Block register(String id, Block block) 
     {
         registerBlockItem(id, block);
         
         return Registry.register(Registries.BLOCK, Identifier.of(AzureTraveller.MOD_ID, id), block);
     }
 
-    public static Block createLogBlock() 
+    private static Block createLogBlock() 
     {
         return new PillarBlock(
                 AbstractBlock.Settings.create()
@@ -122,7 +122,7 @@ public class AtBlocks
         );
     }
 
-    public static Block createLeavesBlock(BlockSoundGroup soundGroup) 
+    private static Block createLeavesBlock(BlockSoundGroup soundGroup) 
     {
         return new LeavesBlock(
                 AbstractBlock.Settings.create()

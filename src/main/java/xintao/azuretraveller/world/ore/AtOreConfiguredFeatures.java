@@ -40,12 +40,12 @@ public class AtOreConfiguredFeatures
         register(featureRegisterable, SILVER_ORE_CONFIGURED, Feature.ORE, new OreFeatureConfig(overWorldTarget, 8));
     }
     
-    public static RegistryKey<ConfiguredFeature<?, ?>> of(String id)
+    private static RegistryKey<ConfiguredFeature<?, ?>> of(String id)
     {
         return RegistryKey.of(RegistryKeys.CONFIGURED_FEATURE, Identifier.of(AzureTraveller.MOD_ID, id));
     }
 
-    public static <FC extends FeatureConfig, F extends Feature<FC>> void register(
+    private static <FC extends FeatureConfig, F extends Feature<FC>> void register(
             Registerable<ConfiguredFeature<?, ?>> registerable, RegistryKey<ConfiguredFeature<?, ?>> key, F feature, FC config
     )
     {
