@@ -3,7 +3,6 @@ package xintao.azuretraveller.world.gen.surfacebuilder;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.world.gen.surfacebuilder.MaterialRules;
-import xintao.azuretraveller.world.biome.AtBiomes;
 
 public class AtMaterialRules 
 {
