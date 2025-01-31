@@ -23,9 +23,6 @@
 		],
 		"client": [
 			"xintao.azuretraveller.AzureTravellerClient"
-		], 
-		"terrablender": [
-			"xintao.azuretraveller.world.biome.AtTerraBlenderApi"
 		]
 	},
 	"mixins": [
