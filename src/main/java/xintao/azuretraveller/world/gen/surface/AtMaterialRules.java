@@ -1,4 +1,4 @@
-package xintao.azuretraveller.world.gen.surfacebuilder;
+package xintao.azuretraveller.world.gen.surface;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;

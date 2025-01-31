@@ -5,7 +5,7 @@ import terrablender.api.Regions;
 import terrablender.api.SurfaceRuleManager;
 import terrablender.api.TerraBlenderApi;
 import xintao.azuretraveller.AzureTraveller;
-import xintao.azuretraveller.world.gen.surfacebuilder.AtMaterialRules;
+import xintao.azuretraveller.world.gen.surface.AtMaterialRules;
 
 public class AtTerraBlenderApi implements TerraBlenderApi
 {

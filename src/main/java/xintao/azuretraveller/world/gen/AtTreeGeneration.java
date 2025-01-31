@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.minecraft.world.biome.BiomeKeys;
 import net.minecraft.world.gen.GenerationStep;
+import xintao.azuretraveller.world.biome.AtBiomes;
 import xintao.azuretraveller.world.tree.AtTreePlacedFeatures;
 
 public class AtTreeGeneration 
@@ -15,11 +16,11 @@ public class AtTreeGeneration
                 GenerationStep.Feature.VEGETAL_DECORATION, AtTreePlacedFeatures.CELESTE_TREE_PLACED);
 
         BiomeModifications.addFeature(BiomeSelectors
-                        .includeByKey(BiomeKeys.FOREST, BiomeKeys.FLOWER_FOREST), 
+                        .includeByKey(BiomeKeys.FOREST, BiomeKeys.FLOWER_FOREST, AtBiomes.FRUIT_FOREST), 
                 GenerationStep.Feature.VEGETAL_DECORATION, AtTreePlacedFeatures.PEAR_TREE_PLACED);
 
         BiomeModifications.addFeature(BiomeSelectors
-                        .includeByKey(BiomeKeys.FOREST, BiomeKeys.FLOWER_FOREST), 
+                        .includeByKey(BiomeKeys.FOREST, BiomeKeys.FLOWER_FOREST, AtBiomes.FRUIT_FOREST), 
                 GenerationStep.Feature.VEGETAL_DECORATION, AtTreePlacedFeatures.PEACH_TREE_PLACED);
     }
 }
