@@ -18,7 +18,7 @@ repositories {
 	// for more information about repositories.
 
 	// maven { url "https://maven.shedaniel.me" }
-	maven { url = 'https://maven.minecraftforge.net/' }
+	// maven { url = 'https://maven.minecraftforge.net/' }
 }
 
 fabricApi {
@@ -36,7 +36,7 @@ dependencies {
 
 	// modCompileOnly "me.shedaniel:RoughlyEnoughItems-api-fabric:16.0.788"
 	// modImplementation "me.shedaniel:RoughlyEnoughItems-fabric:16.0.788"
-	modImplementation "com.github.glitchfiend:TerraBlender-fabric:1.21-4.0.0.2"
+	// modImplementation "com.github.glitchfiend:TerraBlender-fabric:1.21-4.0.0.2"
 	
 }
 
