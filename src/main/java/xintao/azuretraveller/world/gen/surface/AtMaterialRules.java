@@ -18,7 +18,7 @@ public class AtMaterialRules
     
     public static MaterialRules.MaterialRule modMaterialRule()
     {
-        MaterialRules.MaterialCondition waterLevel = MaterialRules.water(0, 0);
+        MaterialRules.MaterialCondition waterLevel = MaterialRules.water(-1, 0);
         MaterialRules.MaterialRule grassBlockSurface = MaterialRules.sequence(MaterialRules.condition(waterLevel, GRASS_BLOCK), DIRT);
         
         return MaterialRules.sequence(
