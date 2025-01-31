@@ -14,6 +14,7 @@ public class AtTerraBlenderApi implements TerraBlenderApi
     {
         Regions.register(new AtOverworldRegion(Identifier.of(AzureTraveller.MOD_ID, "overworld"), 4));
 
-        SurfaceRuleManager.addSurfaceRules(SurfaceRuleManager.RuleCategory.OVERWORLD, AzureTraveller.MOD_ID, AtMaterialRules.modMaterialRule());
+        SurfaceRuleManager.addSurfaceRules(SurfaceRuleManager.RuleCategory.OVERWORLD, 
+                AzureTraveller.MOD_ID, AtMaterialRules.modMaterialRule());
     }
 }
