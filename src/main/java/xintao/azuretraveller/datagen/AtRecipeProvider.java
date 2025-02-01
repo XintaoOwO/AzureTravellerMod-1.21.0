@@ -31,6 +31,7 @@ public class AtRecipeProvider extends FabricRecipeProvider
     @Override
     public void generate(RecipeExporter exporter) 
     {
+        // 9合1，1拆9
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, AtItems.MYTHRIL_INGOT, 
                 RecipeCategory.BUILDING_BLOCKS, AtBlocks.MYTHRIL_BLOCK);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, AtItems.RAW_MYTHRIL, 
@@ -173,6 +174,36 @@ public class AtRecipeProvider extends FabricRecipeProvider
                 .input('#', AtItems.OBSIDIAN_INGOT)
                 .criterion("has_item", RecipeProvider.conditionsFromItem(AtItems.OBSIDIAN_INGOT))
                 .offerTo(exporter, Identifier.of(AzureTraveller.MOD_ID, "obsidian_boots"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, AtItems.MYTHRIL_HELMET, 1)
+                .pattern("###")
+                .pattern("# #")
+                .input('#', AtItems.MYTHRIL_INGOT)
+                .criterion("has_item", RecipeProvider.conditionsFromItem(AtItems.MYTHRIL_INGOT))
+                .offerTo(exporter, Identifier.of(AzureTraveller.MOD_ID, "mythril_helmet"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, AtItems.MYTHRIL_CHESTPLATE, 1)
+                .pattern("# #")
+                .pattern("###")
+                .pattern("###")
+                .input('#', AtItems.MYTHRIL_INGOT)
+                .criterion("has_item", RecipeProvider.conditionsFromItem(AtItems.MYTHRIL_INGOT))
+                .offerTo(exporter, Identifier.of(AzureTraveller.MOD_ID, "mythril_chestplate"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, AtItems.MYTHRIL_LEGGINGS, 1)
+                .pattern("###")
+                .pattern("# #")
+                .pattern("# #")
+                .input('#', AtItems.MYTHRIL_INGOT)
+                .criterion("has_item", RecipeProvider.conditionsFromItem(AtItems.MYTHRIL_INGOT))
+                .offerTo(exporter, Identifier.of(AzureTraveller.MOD_ID, "mythril_leggings"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, AtItems.MYTHRIL_BOOTS, 1)
+                .pattern("# #")
+                .pattern("# #")
+                .input('#', AtItems.MYTHRIL_INGOT)
+                .criterion("has_item", RecipeProvider.conditionsFromItem(AtItems.MYTHRIL_INGOT))
+                .offerTo(exporter, Identifier.of(AzureTraveller.MOD_ID, "mythril_boots"));
         
         offerSmelting(exporter, MYTHRIL_INGOT, RecipeCategory.MISC, AtItems.MYTHRIL_INGOT, 
                 0.7f, 200, "mythril_ingot");
