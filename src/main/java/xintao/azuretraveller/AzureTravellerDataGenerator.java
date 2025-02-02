@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.minecraft.registry.RegistryBuilder;
 import net.minecraft.registry.RegistryKeys;
 import xintao.azuretraveller.datagen.*;
+import xintao.azuretraveller.enchantment.AtEnchantments;
 import xintao.azuretraveller.world.ore.AtOreConfiguredFeatures;
 import xintao.azuretraveller.world.ore.AtOrePlacedFeatures;
 import xintao.azuretraveller.world.tree.AtTreeConfiguredFeatures;
@@ -24,7 +25,7 @@ public class AzureTravellerDataGenerator implements DataGeneratorEntrypoint
 		pack.addProvider(AtLootTableProvider::new);
 		pack.addProvider(AtModelProvider::new);
 		pack.addProvider(AtRecipeProvider::new);
-		pack.addProvider(AtWorldGenerator::new);
+		pack.addProvider(AtDynamicRegistryProvider::new);
 	}
 
 	@Override
@@ -34,5 +35,6 @@ public class AzureTravellerDataGenerator implements DataGeneratorEntrypoint
 		registryBuilder.addRegistry(RegistryKeys.PLACED_FEATURE, AtTreePlacedFeatures::bootstrap);
 		registryBuilder.addRegistry(RegistryKeys.CONFIGURED_FEATURE, AtOreConfiguredFeatures::bootstrap);
 		registryBuilder.addRegistry(RegistryKeys.PLACED_FEATURE, AtOrePlacedFeatures::bootstrap);
+		registryBuilder.addRegistry(RegistryKeys.ENCHANTMENT, AtEnchantments::bootstrap);
 	}
 }

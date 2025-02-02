@@ -9,7 +9,7 @@ import net.minecraft.util.math.Vec3d;
 
 public record ContinuousShootingEffect() implements EnchantmentEntityEffect
 {
-    public static final MapCodec<ContinuousShootingEffect> CONTINUOUS_SHOOTING_EFFECT_MAP_CODEC = 
+    public static final MapCodec<ContinuousShootingEffect> MAP_CODEC = 
             MapCodec.unit(ContinuousShootingEffect::new);
     
     @Override
@@ -21,6 +21,6 @@ public record ContinuousShootingEffect() implements EnchantmentEntityEffect
     @Override
     public MapCodec<? extends EnchantmentEntityEffect> getCodec() 
     {
-        return CONTINUOUS_SHOOTING_EFFECT_MAP_CODEC;
+        return MAP_CODEC;
     }
 }

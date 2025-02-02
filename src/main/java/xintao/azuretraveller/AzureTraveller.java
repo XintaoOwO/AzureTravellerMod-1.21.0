@@ -5,6 +5,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import xintao.azuretraveller.block.AtBlocks;
 import xintao.azuretraveller.block.wood.AtWoodBlock;
+import xintao.azuretraveller.enchantment.AtEnchantmentEffects;
 import xintao.azuretraveller.entity.AtBlockEntities;
 import xintao.azuretraveller.item.AtItemGroup;
 import xintao.azuretraveller.item.AtItems;
@@ -31,6 +32,7 @@ public class AzureTraveller implements ModInitializer
 		AtBlockEntities.registerModBlockEntity();
 		AtWoodBlock.registerModWood();
 		AtWorldGeneration.modWorldGeneration();
+		AtEnchantmentEffects.registerModEnchantmentEffect();
 		
 		LOGGER.info("Hello Fabric world!");
 	}

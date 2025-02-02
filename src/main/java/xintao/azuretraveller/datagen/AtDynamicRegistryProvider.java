@@ -7,10 +7,10 @@ import net.minecraft.registry.RegistryWrapper;
 
 import java.util.concurrent.CompletableFuture;
 
-public class AtWorldGenerator extends FabricDynamicRegistryProvider 
+public class AtDynamicRegistryProvider extends FabricDynamicRegistryProvider 
 {
 
-    public AtWorldGenerator(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) 
+    public AtDynamicRegistryProvider(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) 
     {
         super(output, registriesFuture);
     }
@@ -20,11 +20,12 @@ public class AtWorldGenerator extends FabricDynamicRegistryProvider
     {
         entries.addAll(registries.getWrapperOrThrow(RegistryKeys.CONFIGURED_FEATURE));
         entries.addAll(registries.getWrapperOrThrow(RegistryKeys.PLACED_FEATURE));
+        entries.addAll(registries.getWrapperOrThrow(RegistryKeys.ENCHANTMENT));
     }
 
     @Override
     public String getName() 
     {
-        return "World Gen Data";
+        return "\0";
     }
 }
