@@ -39,5 +39,41 @@ public class AtItemTagProvider extends FabricTagProvider.ItemTagProvider
                 .add(AtItems.MYTHRIL_CHESTPLATE)
                 .add(AtItems.MYTHRIL_LEGGINGS)
                 .add(AtItems.MYTHRIL_BOOTS);
+        
+        getOrCreateTagBuilder(ItemTags.SWORDS)
+                .add(AtItems.OBSIDIAN_SWORD)
+                .add(AtItems.MYTHRIL_SWORD);
+        
+        getOrCreateTagBuilder(ItemTags.PICKAXES)
+                .add(AtItems.OBSIDIAN_PICKAXE)
+                .add(AtItems.MYTHRIL_PICKAXE);
+        
+        getOrCreateTagBuilder(ItemTags.AXES)
+                .add(AtItems.OBSIDIAN_AXE)
+                .add(AtItems.MYTHRIL_AXE);
+        
+        getOrCreateTagBuilder(ItemTags.SHOVELS)
+                .add(AtItems.OBSIDIAN_SHOVEL)
+                .add(AtItems.MYTHRIL_SHOVEL);
+        
+        getOrCreateTagBuilder(ItemTags.HOES)
+                .add(AtItems.OBSIDIAN_HOE)
+                .add(AtItems.MYTHRIL_HOE);
+        
+        getOrCreateTagBuilder(ItemTags.HEAD_ARMOR)
+                .add(AtItems.OBSIDIAN_HELMET)
+                .add(AtItems.MYTHRIL_HELMET);
+        
+        getOrCreateTagBuilder(ItemTags.CHEST_ARMOR)
+                .add(AtItems.OBSIDIAN_CHESTPLATE)
+                .add(AtItems.MYTHRIL_CHESTPLATE);
+
+        getOrCreateTagBuilder(ItemTags.LEG_ARMOR)
+                .add(AtItems.OBSIDIAN_LEGGINGS)
+                .add(AtItems.MYTHRIL_LEGGINGS);
+        
+        getOrCreateTagBuilder(ItemTags.FOOT_ARMOR)
+                .add(AtItems.OBSIDIAN_BOOTS)
+                .add(AtItems.MYTHRIL_BOOTS);
     }
 }
