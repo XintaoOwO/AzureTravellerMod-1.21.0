@@ -23,7 +23,7 @@ public class AtModelProvider extends FabricModelProvider
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) 
     {
-        AtBlockFamilies.getFamilies()
+        AtBlockFamilies.getFamily()
                 .filter(BlockFamily::shouldGenerateModels)
                 .forEach(blockFamily ->
                         blockStateModelGenerator.registerCubeAllModelTexturePool(blockFamily.getBaseBlock())

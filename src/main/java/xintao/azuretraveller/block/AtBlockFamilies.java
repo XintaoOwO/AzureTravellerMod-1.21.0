@@ -10,7 +10,7 @@ import java.util.stream.Stream;
 
 public class AtBlockFamilies 
 {
-    private static final Map<Block, BlockFamily> BASE_BLOCKS_TO_FAMILIES = Maps.<Block, BlockFamily>newHashMap();
+    private static final Map<Block, BlockFamily> BASE_BLOCK_TO_FAMILY = Maps.newHashMap();
     
     public static final BlockFamily MYTHRIL = register(AtBlocks.MYTHRIL_BLOCK)
             .slab(AtBlocks.MYTHRIL_SLAB)
@@ -41,7 +41,7 @@ public class AtBlockFamilies
     private static BlockFamily.Builder register(Block baseBlock) 
     {
         BlockFamily.Builder builder = new BlockFamily.Builder(baseBlock);
-        BlockFamily blockFamily = BASE_BLOCKS_TO_FAMILIES.put(baseBlock, builder.build());
+        BlockFamily blockFamily = BASE_BLOCK_TO_FAMILY.put(baseBlock, builder.build());
         if (blockFamily != null) 
         {
             throw new IllegalStateException("Duplicate family definition for " + Registries.BLOCK.getId(baseBlock));
@@ -52,8 +52,8 @@ public class AtBlockFamilies
         }
     }
 
-    public static Stream<BlockFamily> getFamilies() 
+    public static Stream<BlockFamily> getFamily() 
     {
-        return BASE_BLOCKS_TO_FAMILIES.values().stream();
+        return BASE_BLOCK_TO_FAMILY.values().stream();
     }
 }
