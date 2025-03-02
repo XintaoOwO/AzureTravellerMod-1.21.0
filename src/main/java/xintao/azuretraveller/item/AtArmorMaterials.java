@@ -16,7 +16,7 @@ import java.util.EnumMap;
 import java.util.List;
 import java.util.function.Supplier;
 
-public class AtArmorMaterials 
+public class AtArmorMaterials
 {
     public static final RegistryEntry<ArmorMaterial> MYTHRIL = 
             register("mythril", Util.make(new EnumMap(ArmorItem.Type.class), 
