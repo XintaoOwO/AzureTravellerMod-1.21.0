@@ -9,7 +9,7 @@ import xintao.azuretraveller.tag.AtBlockTags;
 
 import java.util.function.Supplier;
 
-public enum AtToolMaterials implements ToolMaterial 
+public enum AtToolMaterials implements ToolMaterial
 {
     OBSIDIAN(AtBlockTags.INCORRECT_FOR_OBSIDIAN_TOOL, 2048, 8.0f, 2.5f, 10,
             () -> Ingredient.ofItems(AtItems.OBSIDIAN_INGOT)), 

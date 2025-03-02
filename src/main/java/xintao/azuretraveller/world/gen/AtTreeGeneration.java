@@ -6,7 +6,7 @@ import net.minecraft.world.biome.BiomeKeys;
 import net.minecraft.world.gen.GenerationStep;
 import xintao.azuretraveller.world.tree.AtTreePlacedFeatures;
 
-public class AtTreeGeneration 
+public class AtTreeGeneration
 {
     public static void modTreeGeneration()
     {

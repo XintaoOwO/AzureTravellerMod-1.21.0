@@ -4,7 +4,7 @@ import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import xintao.azuretraveller.block.AtBlocks;
 
-public class AtWoodBlock 
+public class AtWoodBlock
 {
     public static void registerModWood()
     {

@@ -8,7 +8,7 @@ import net.minecraft.registry.Registries;
 import java.util.Map;
 import java.util.stream.Stream;
 
-public class AtBlockFamilies 
+public class AtBlockFamilies
 {
     private static final Map<Block, BlockFamily> BASE_BLOCK_TO_FAMILY = Maps.newHashMap();
     

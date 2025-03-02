@@ -8,7 +8,7 @@ import net.minecraft.util.Identifier;
 import xintao.azuretraveller.AzureTraveller;
 import xintao.azuretraveller.enchantment.effect.ContinuousShootingEffect;
 
-public class AtEnchantmentEffects 
+public class AtEnchantmentEffects
 {
     public static final MapCodec<? extends EnchantmentEntityEffect> CONTINUOUS_SHOOTING = register("continuous_shooting", ContinuousShootingEffect.MAP_CODEC);
     

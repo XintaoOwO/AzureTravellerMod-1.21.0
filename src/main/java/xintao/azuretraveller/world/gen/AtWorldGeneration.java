@@ -1,6 +1,6 @@
 package xintao.azuretraveller.world.gen;
 
-public class AtWorldGeneration 
+public class AtWorldGeneration
 {
     public static void modWorldGeneration()
     {

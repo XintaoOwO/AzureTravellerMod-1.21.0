@@ -11,7 +11,7 @@ import xintao.azuretraveller.world.ore.AtOrePlacedFeatures;
 import xintao.azuretraveller.world.tree.AtTreeConfiguredFeatures;
 import xintao.azuretraveller.world.tree.AtTreePlacedFeatures;
 
-public class AzureTravellerDataGenerator implements DataGeneratorEntrypoint 
+public class AzureTravellerDataGenerator implements DataGeneratorEntrypoint
 {
 	@Override
 	public void onInitializeDataGenerator(FabricDataGenerator fabricDataGenerator) 

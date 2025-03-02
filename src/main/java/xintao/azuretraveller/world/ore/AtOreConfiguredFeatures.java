@@ -18,7 +18,7 @@ import xintao.azuretraveller.block.AtBlocks;
 
 import java.util.List;
 
-public class AtOreConfiguredFeatures 
+public class AtOreConfiguredFeatures
 {
     public static final RegistryKey<ConfiguredFeature<?, ?>> SILVER_ORE_CONFIGURED = of("silver_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> NETHER_MYTHRIL_ORE_CONFIGURED = of("nether_mythril_ore");

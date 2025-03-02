@@ -12,7 +12,7 @@ import xintao.azuretraveller.AzureTraveller;
 import xintao.azuretraveller.block.AtBlocks;
 import xintao.azuretraveller.entity.block.ObsidianChestBlockEntity;
 
-public class AtBlockEntities 
+public class AtBlockEntities
 {
     public static final BlockEntityType<ObsidianChestBlockEntity> OBSIDIAN_CHEST_BLOCK_ENTITY = create("obsidian_chest", 
             BlockEntityType.Builder.create(ObsidianChestBlockEntity::new, AtBlocks.OBSIDIAN_CHEST));

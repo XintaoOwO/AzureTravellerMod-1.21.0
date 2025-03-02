@@ -13,7 +13,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.BlockView;
 import xintao.azuretraveller.item.AtItems;
 
-public class StrawberryCropBlock extends CropBlock 
+public class StrawberryCropBlock extends CropBlock
 {
     private static final int max_age = 3;
     private static final IntProperty AGE = Properties.AGE_3;

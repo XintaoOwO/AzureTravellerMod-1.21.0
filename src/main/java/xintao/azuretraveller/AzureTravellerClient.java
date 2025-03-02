@@ -5,7 +5,7 @@ import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.minecraft.client.render.RenderLayer;
 import xintao.azuretraveller.block.AtBlocks;
 
-public class AzureTravellerClient implements ClientModInitializer 
+public class AzureTravellerClient implements ClientModInitializer
 {
     @Override
     public void onInitializeClient() 

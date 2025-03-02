@@ -14,7 +14,7 @@ import xintao.azuretraveller.AzureTraveller;
 
 import java.util.List;
 
-public class AtOrePlacedFeatures 
+public class AtOrePlacedFeatures
 {
     public static final RegistryKey<PlacedFeature> SILVER_ORE_PLACED = of("silver_ore_placed");
 

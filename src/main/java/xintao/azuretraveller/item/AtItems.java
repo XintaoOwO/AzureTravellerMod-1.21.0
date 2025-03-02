@@ -8,7 +8,7 @@ import xintao.azuretraveller.AzureTraveller;
 import xintao.azuretraveller.block.AtBlocks;
 import xintao.azuretraveller.item.armor.AtArmorItem;
 
-public class AtItems 
+public class AtItems
 {
     public static final Item RAW_SILVER = registerItem("raw_silver", new Item(new Item.Settings()));
     public static final Item RAW_MYTHRIL = registerItem("raw_mythril", new Item(new Item.Settings()));

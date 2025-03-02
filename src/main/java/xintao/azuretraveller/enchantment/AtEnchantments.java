@@ -11,7 +11,7 @@ import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
 import xintao.azuretraveller.AzureTraveller;
 
-public class AtEnchantments 
+public class AtEnchantments
 {
     public static final RegistryKey<Enchantment> CONTINUOUS_SHOOTING = of("continuous_shooting");
     public static final RegistryKey<Enchantment> TRACKING = of("tracking");

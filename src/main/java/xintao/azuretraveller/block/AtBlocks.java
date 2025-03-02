@@ -15,7 +15,7 @@ import xintao.azuretraveller.block.fn.ObsidianChestBlock;
 import xintao.azuretraveller.entity.AtBlockEntities;
 import xintao.azuretraveller.world.tree.AtSaplingGenerator;
 
-public class AtBlocks 
+public class AtBlocks
 {
     public static final Block MYTHRIL_BLOCK = register("mythril_block", 
             new Block(AbstractBlock.Settings.create().requiresTool().strength(3.0f, 3.0f)));
