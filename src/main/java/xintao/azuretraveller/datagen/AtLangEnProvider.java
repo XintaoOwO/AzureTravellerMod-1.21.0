@@ -36,6 +36,7 @@ public class AtLangEnProvider extends FabricLanguageProvider
         translationBuilder.add(AtItems.MYTHRIL_AXE, "Mythril Axe");
         translationBuilder.add(AtItems.MYTHRIL_SHOVEL, "Mythril Shovel");
         translationBuilder.add(AtItems.MYTHRIL_HOE, "Mythril Hoe");
+        translationBuilder.add(AtItems.MYTHRIL_PICKAXE_AXE, "Mythril Pickaxe Axe");
         translationBuilder.add(AtItems.MYTHRIL_HELMET, "Mythril Helmet");
         translationBuilder.add(AtItems.MYTHRIL_CHESTPLATE, "Mythril Chestplate");
         translationBuilder.add(AtItems.MYTHRIL_LEGGINGS, "Mythril Leggings");

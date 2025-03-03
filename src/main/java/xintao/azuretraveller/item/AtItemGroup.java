@@ -126,6 +126,7 @@ public class AtItemGroup
                             entries.add(AtItems.MYTHRIL_AXE);
                             entries.add(AtItems.MYTHRIL_SHOVEL);
                             entries.add(AtItems.MYTHRIL_HOE);
+                            entries.add(AtItems.MYTHRIL_PICKAXE_AXE);
                             
                             entries.add(AtItems.OBSIDIAN_HELMET);
                             entries.add(AtItems.OBSIDIAN_CHESTPLATE);

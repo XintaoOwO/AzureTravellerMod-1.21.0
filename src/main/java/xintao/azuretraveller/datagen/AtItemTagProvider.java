@@ -46,11 +46,13 @@ public class AtItemTagProvider extends FabricTagProvider.ItemTagProvider
         
         getOrCreateTagBuilder(ItemTags.PICKAXES)
                 .add(AtItems.OBSIDIAN_PICKAXE)
-                .add(AtItems.MYTHRIL_PICKAXE);
+                .add(AtItems.MYTHRIL_PICKAXE)
+                .add(AtItems.MYTHRIL_PICKAXE_AXE);
         
         getOrCreateTagBuilder(ItemTags.AXES)
                 .add(AtItems.OBSIDIAN_AXE)
-                .add(AtItems.MYTHRIL_AXE);
+                .add(AtItems.MYTHRIL_AXE)
+                .add(AtItems.MYTHRIL_PICKAXE_AXE);
         
         getOrCreateTagBuilder(ItemTags.SHOVELS)
                 .add(AtItems.OBSIDIAN_SHOVEL)
