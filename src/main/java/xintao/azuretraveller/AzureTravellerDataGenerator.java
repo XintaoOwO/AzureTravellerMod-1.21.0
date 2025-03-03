@@ -35,6 +35,6 @@ public class AzureTravellerDataGenerator implements DataGeneratorEntrypoint
 		registryBuilder.addRegistry(RegistryKeys.PLACED_FEATURE, AtTreePlacedFeatures::bootstrap);
 		registryBuilder.addRegistry(RegistryKeys.CONFIGURED_FEATURE, AtOreConfiguredFeatures::bootstrap);
 		registryBuilder.addRegistry(RegistryKeys.PLACED_FEATURE, AtOrePlacedFeatures::bootstrap);
-		registryBuilder.addRegistry(RegistryKeys.ENCHANTMENT, AtEnchantments::bootstrap);
+		//registryBuilder.addRegistry(RegistryKeys.ENCHANTMENT, AtEnchantments::bootstrap);
 	}
 }

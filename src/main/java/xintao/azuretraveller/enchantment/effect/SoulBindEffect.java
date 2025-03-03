@@ -7,10 +7,10 @@ import net.minecraft.entity.Entity;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.math.Vec3d;
 
-public record ContinuousShootingEffect() implements EnchantmentEntityEffect
+public record SoulBindEffect() implements EnchantmentEntityEffect
 {
-    public static final MapCodec<ContinuousShootingEffect> MAP_CODEC = 
-            MapCodec.unit(ContinuousShootingEffect::new);
+    public static final MapCodec<SoulBindEffect> MAP_CODEC =
+            MapCodec.unit(SoulBindEffect::new);
     
     @Override
     public void apply(ServerWorld world, int level, EnchantmentEffectContext context, Entity user, Vec3d pos)

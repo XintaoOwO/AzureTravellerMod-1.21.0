@@ -15,6 +15,7 @@ public class AtEnchantments
 {
     public static final RegistryKey<Enchantment> CONTINUOUS_SHOOTING = of("continuous_shooting");
     public static final RegistryKey<Enchantment> TRACKING = of("tracking");
+    public static final RegistryKey<Enchantment> SOUL_BIND = of("soul_bind");
     
     public static void bootstrap(Registerable<Enchantment> registry)
     {

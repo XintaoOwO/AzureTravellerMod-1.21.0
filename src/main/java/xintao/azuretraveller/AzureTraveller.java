@@ -32,7 +32,7 @@ public class AzureTraveller implements ModInitializer
 		AtBlockEntities.registerModBlockEntity();
 		AtWoodBlock.registerModWood();
 		AtWorldGeneration.modWorldGeneration();
-		AtEnchantmentEffects.registerModEnchantmentEffect();
+		//AtEnchantmentEffects.registerModEnchantmentEffect();
 		
 		LOGGER.info("Hello Fabric world!");
 	}
