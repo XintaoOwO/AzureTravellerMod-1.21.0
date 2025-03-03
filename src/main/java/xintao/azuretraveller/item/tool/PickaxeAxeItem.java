@@ -7,7 +7,6 @@ import net.minecraft.block.*;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.*;
-import net.minecraft.registry.tag.TagKey;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
@@ -66,21 +65,33 @@ public class PickaxeAxeItem extends AxeItem
         World world = context.getWorld();
         BlockPos blockPos = context.getBlockPos();
         PlayerEntity playerEntity = context.getPlayer();
-        if (shouldCancelStripAttempt(context)) {
+        
+        if (shouldCancelStripAttempt(context))
+        {
             return ActionResult.PASS;
-        } else {
+        }
+        else
+        {
             Optional<BlockState> optional = this.tryStrip(world, blockPos, playerEntity, world.getBlockState(blockPos));
-            if (optional.isEmpty()) {
+            
+            if (optional.isEmpty())
+            {
                 return ActionResult.PASS;
-            } else {
+            }
+            else
+            {
                 ItemStack itemStack = context.getStack();
-                if (playerEntity instanceof ServerPlayerEntity) {
+                
+                if (playerEntity instanceof ServerPlayerEntity)
+                {
                     Criteria.ITEM_USED_ON_BLOCK.trigger((ServerPlayerEntity)playerEntity, blockPos, itemStack);
                 }
 
                 world.setBlockState(blockPos, (BlockState)optional.get(), Block.NOTIFY_ALL_AND_REDRAW);
                 world.emitGameEvent(GameEvent.BLOCK_CHANGE, blockPos, GameEvent.Emitter.of(playerEntity, (BlockState)optional.get()));
-                if (playerEntity != null) {
+                
+                if (playerEntity != null)
+                {
                     itemStack.damage(1, playerEntity, LivingEntity.getSlotForHand(context.getHand()));
                 }
 
