@@ -5,7 +5,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import xintao.azuretraveller.block.AtBlocks;
 import xintao.azuretraveller.block.wood.AtWoodBlock;
-import xintao.azuretraveller.enchantment.AtEnchantmentEffects;
 import xintao.azuretraveller.entity.AtBlockEntities;
 import xintao.azuretraveller.item.AtItemGroup;
 import xintao.azuretraveller.item.AtItems;
