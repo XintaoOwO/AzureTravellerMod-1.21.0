@@ -103,23 +103,37 @@ public class PickaxeAxeItem extends AxeItem
     private Optional<BlockState> tryStrip(World world, BlockPos pos, @Nullable PlayerEntity player, BlockState state)
     {
         Optional<BlockState> optional = this.getStrippedState(state);
-        if (optional.isPresent()) {
+        
+        if (optional.isPresent())
+        {
             world.playSound(player, pos, SoundEvents.ITEM_AXE_STRIP, SoundCategory.BLOCKS, 1.0F, 1.0F);
+            
             return optional;
-        } else {
+        }
+        else
+        {
             Optional<BlockState> optional2 = Oxidizable.getDecreasedOxidationState(state);
-            if (optional2.isPresent()) {
+            
+            if (optional2.isPresent())
+            {
                 world.playSound(player, pos, SoundEvents.ITEM_AXE_SCRAPE, SoundCategory.BLOCKS, 1.0F, 1.0F);
                 world.syncWorldEvent(player, WorldEvents.BLOCK_SCRAPED, pos, 0);
+                
                 return optional2;
-            } else {
+            }
+            else
+            {
                 Optional<BlockState> optional3 = Optional.ofNullable((Block)((BiMap)HoneycombItem.WAXED_TO_UNWAXED_BLOCKS.get()).get(state.getBlock()))
                         .map(block -> block.getStateWithProperties(state));
-                if (optional3.isPresent()) {
+                
+                if (optional3.isPresent())
+                {
                     world.playSound(player, pos, SoundEvents.ITEM_AXE_WAX_OFF, SoundCategory.BLOCKS, 1.0F, 1.0F);
                     world.syncWorldEvent(player, WorldEvents.WAX_REMOVED, pos, 0);
                     return optional3;
-                } else {
+                }
+                else
+                {
                     return Optional.empty();
                 }
             }
