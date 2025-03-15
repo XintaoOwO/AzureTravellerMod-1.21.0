@@ -56,6 +56,7 @@ public class PickaxeAxeItem extends AxeItem
     private static boolean shouldCancelStripAttempt(ItemUsageContext context)
     {
         PlayerEntity playerEntity = context.getPlayer();
+        
         return context.getHand().equals(Hand.MAIN_HAND) && playerEntity.getOffHandStack().isOf(Items.SHIELD) && !playerEntity.shouldCancelInteraction();
     }
 
