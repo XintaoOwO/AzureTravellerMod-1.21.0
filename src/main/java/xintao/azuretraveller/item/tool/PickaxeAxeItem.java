@@ -132,6 +132,7 @@ public class PickaxeAxeItem extends AxeItem
                 {
                     world.playSound(player, pos, SoundEvents.ITEM_AXE_WAX_OFF, SoundCategory.BLOCKS, 1.0F, 1.0F);
                     world.syncWorldEvent(player, WorldEvents.WAX_REMOVED, pos, 0);
+                    
                     return optional3;
                 }
                 else
