@@ -123,7 +123,8 @@ public class PickaxeAxeItem extends AxeItem
             }
             else
             {
-                Optional<BlockState> optional3 = Optional.ofNullable((Block)((BiMap)HoneycombItem.WAXED_TO_UNWAXED_BLOCKS.get()).get(state.getBlock()))
+                Optional<BlockState> optional3 = Optional.ofNullable((Block)((BiMap)HoneycombItem.WAXED_TO_UNWAXED_BLOCKS
+                                .get()).get(state.getBlock()))
                         .map(block -> block.getStateWithProperties(state));
                 
                 if (optional3.isPresent())
