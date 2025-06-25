@@ -140,7 +140,7 @@ public class AtBlocks
         );
     }
 
-    public static void load()
+    public static void init()
     {
         
     }
