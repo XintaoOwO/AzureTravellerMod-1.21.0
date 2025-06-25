@@ -88,7 +88,7 @@ public class AtItems
         return Registry.register(Registries.ITEM, Identifier.of(AzureTraveller.MOD_ID, id), item);
     }
 
-    public static void registerModItem()
+    public static void load()
     {
         
     }

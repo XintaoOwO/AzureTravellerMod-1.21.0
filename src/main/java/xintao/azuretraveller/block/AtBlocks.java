@@ -140,7 +140,7 @@ public class AtBlocks
         );
     }
 
-    public static void registerModBlock()
+    public static void load()
     {
         
     }

@@ -6,7 +6,7 @@ import xintao.azuretraveller.block.AtBlocks;
 
 public class AtWoodBlock
 {
-    public static void registerModWood()
+    public static void addModWood()
     {
         StrippableBlockRegistry.register(AtBlocks.CELESTE_LOG, AtBlocks.STRIPPED_CELESTE_LOG);
         StrippableBlockRegistry.register(AtBlocks.CELESTE_WOOD, AtBlocks.STRIPPED_CELESTE_WOOD);

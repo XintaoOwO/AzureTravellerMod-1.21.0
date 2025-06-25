@@ -24,7 +24,7 @@ public class AtBlockEntities
         return Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(AzureTraveller.MOD_ID, id), builder.build(type));
     }
     
-    public static void registerModBlockEntity()
+    public static void load()
     {
         
     }
