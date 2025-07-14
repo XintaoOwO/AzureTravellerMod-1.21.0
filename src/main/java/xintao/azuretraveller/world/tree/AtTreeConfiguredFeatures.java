@@ -16,7 +16,7 @@ import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
 import xintao.azuretraveller.AzureTraveller;
 import xintao.azuretraveller.block.AtBlocks;
 
-public class AtTreeConfiguredFeatures 
+public class AtTreeConfiguredFeatures
 {
     public static final RegistryKey<ConfiguredFeature<?, ?>> CELESTE_TREE_CONFIGURED = of("celeste_tree");
     public static final RegistryKey<ConfiguredFeature<?, ?>> PEAR_TREE_CONFIGURED = of("pear_tree");

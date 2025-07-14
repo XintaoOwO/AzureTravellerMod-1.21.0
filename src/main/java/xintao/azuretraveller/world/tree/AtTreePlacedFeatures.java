@@ -16,7 +16,7 @@ import xintao.azuretraveller.block.AtBlocks;
 
 import java.util.List;
 
-public class AtTreePlacedFeatures 
+public class AtTreePlacedFeatures
 {
     public static final RegistryKey<PlacedFeature> CELESTE_TREE_PLACED = of("celeste_tree_placed");
     public static final RegistryKey<PlacedFeature> PEAR_TREE_PLACED = of("pear_tree_placed");

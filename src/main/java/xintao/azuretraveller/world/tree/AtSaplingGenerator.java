@@ -5,7 +5,7 @@ import xintao.azuretraveller.AzureTraveller;
 
 import java.util.Optional;
 
-public class AtSaplingGenerator 
+public class AtSaplingGenerator
 {
     public static final SaplingGenerator CELESTE_TREE_SAPLING = new SaplingGenerator(
             AzureTraveller.MOD_ID + ":" + "celeste_tree", 
