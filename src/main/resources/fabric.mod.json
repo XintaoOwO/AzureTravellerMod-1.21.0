@@ -1,6 +1,6 @@
 {
 	"schemaVersion": 1,
-	"id": "azuretraveller",
+	"id": "aztrvl",
 	"version": "${version}",
 	"name": "Azure Traveller",
 	"description": "An adventure mod for Fabric Minecraft 1.21!",
@@ -12,7 +12,7 @@
 		"sources": "https://github.com/XintaoOwO/AzureTravellerMod-1.21.0"
 	},
 	"license": "GPL-3.0",
-	"icon": "assets/azuretraveller/icon.png",
+	"icon": "assets/aztrvl/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
@@ -26,7 +26,7 @@
 		]
 	},
 	"mixins": [
-		"azuretraveller.mixins.json"
+		"aztrvl.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.16.2",

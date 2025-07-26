@@ -17,7 +17,7 @@ public class AzureTraveller implements ModInitializer
 	 * 模组使用 Java 21，基于 Fabric 和 Minecraft 1.21 开发，兼容 1.21 和 1.21.1 两个版本。
 	 */
 	// 模组ID
-	public static final String MOD_ID = "azuretraveller";
+	public static final String MOD_ID = "aztrvl";
 	
 	// This logger is used to write text to the console and the log file.
 	// It is considered best practice to use your mod id as the logger's name.
@@ -37,7 +37,6 @@ public class AzureTraveller implements ModInitializer
 		AtBlockEntities.init();
 		AtWoodBlock.addModWood();
 		AtWorldGeneration.modWorldGeneration();
-		//AtEnchantmentEffects.registerModEnchantmentEffect();
 
 		// 在控制台和日志文件中输出一条信息，表示模组已成功加载。
 		LOGGER.info("Hello Fabric world!");
