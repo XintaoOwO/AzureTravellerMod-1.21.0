@@ -14,7 +14,7 @@ public class AzureTraveller implements ModInitializer
 {
 	/**
 	 * 这是整个模组的主类，在游戏启动时初始化。
-	 * 模组使用 Java 21，基于 Fabric 和 Minecraft 1.21 开发，兼容 1.21 和 1.21.1 两个版本。
+	 * 模组使用 Java 21，基于 Fabric 和 Minecraft 1.21.1 开发。
 	 */
 	// 模组ID
 	public static final String MOD_ID = "aztrvl";
