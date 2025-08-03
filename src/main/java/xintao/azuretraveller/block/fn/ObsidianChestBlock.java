@@ -15,7 +15,7 @@ import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
-import xintao.azuretraveller.entity.AtBlockEntities;
+import xintao.azuretraveller.entity.AtBlockEntity;
 import xintao.azuretraveller.entity.block.ObsidianChestBlockEntity;
 
 import java.util.function.Supplier;
@@ -23,7 +23,7 @@ import java.util.function.Supplier;
 public class ObsidianChestBlock extends AbstractChestBlock<ObsidianChestBlockEntity>
 {
     public static final MapCodec<ObsidianChestBlock> OBSIDIAN_CHEST_BLOCK_MAP_CODEC = createCodec(settings -> 
-            new ObsidianChestBlock(settings, () -> AtBlockEntities.OBSIDIAN_CHEST_BLOCK_ENTITY));
+            new ObsidianChestBlock(settings, () -> AtBlockEntity.OBSIDIAN_CHEST_BLOCK_ENTITY));
     
     public ObsidianChestBlock(Settings settings, Supplier<BlockEntityType<? extends ObsidianChestBlockEntity>> blockEntityTypeSupplier) 
     {

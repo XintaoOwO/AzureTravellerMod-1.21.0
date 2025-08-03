@@ -3,11 +3,11 @@ package xintao.azuretraveller;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import xintao.azuretraveller.block.AtBlocks;
+import xintao.azuretraveller.block.AtBlock;
 import xintao.azuretraveller.block.wood.AtWoodBlock;
-import xintao.azuretraveller.entity.AtBlockEntities;
+import xintao.azuretraveller.entity.AtBlockEntity;
 import xintao.azuretraveller.item.AtItemGroup;
-import xintao.azuretraveller.item.AtItems;
+import xintao.azuretraveller.item.AtItem;
 import xintao.azuretraveller.world.gen.AtWorldGeneration;
 
 public class AzureTraveller implements ModInitializer
@@ -31,10 +31,10 @@ public class AzureTraveller implements ModInitializer
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
-		AtItems.init();
-		AtBlocks.init();
+		AtItem.init();
+		AtBlock.init();
 		AtItemGroup.registerModItemGroup();
-		AtBlockEntities.init();
+		AtBlockEntity.init();
 		AtWoodBlock.addModWood();
 		AtWorldGeneration.modWorldGeneration();
 

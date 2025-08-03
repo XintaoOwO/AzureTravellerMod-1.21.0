@@ -12,10 +12,10 @@ import net.minecraft.util.Identifier;
 import xintao.azuretraveller.AzureTraveller;
 import xintao.azuretraveller.block.crop.StrawberryCropBlock;
 import xintao.azuretraveller.block.fn.ObsidianChestBlock;
-import xintao.azuretraveller.entity.AtBlockEntities;
+import xintao.azuretraveller.entity.AtBlockEntity;
 import xintao.azuretraveller.world.tree.AtSaplingGenerator;
 
-public class AtBlocks
+public class AtBlock
 {
     public static final Block MYTHRIL_BLOCK = register("mythril_block", 
             new Block(AbstractBlock.Settings.create().requiresTool().strength(3.0f, 3.0f)));
@@ -86,7 +86,7 @@ public class AtBlocks
     public static final Block OBSIDIAN_CHEST = register("obsidian_chest", 
             new ObsidianChestBlock(AbstractBlock.Settings.copy(Blocks.CHEST)
                     .nonOpaque().requiresTool().strength(50.0f, 1200.0f),
-                    () -> AtBlockEntities.OBSIDIAN_CHEST_BLOCK_ENTITY));
+                    () -> AtBlockEntity.OBSIDIAN_CHEST_BLOCK_ENTITY));
     
     public static final Block STRAWBERRY_CROP = Registry.register(Registries.BLOCK, 
             Identifier.of(AzureTraveller.MOD_ID, "strawberry_crop"), 

@@ -9,13 +9,13 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Util;
 import xintao.azuretraveller.AzureTraveller;
-import xintao.azuretraveller.block.AtBlocks;
+import xintao.azuretraveller.block.AtBlock;
 import xintao.azuretraveller.entity.block.ObsidianChestBlockEntity;
 
-public class AtBlockEntities
+public class AtBlockEntity
 {
     public static final BlockEntityType<ObsidianChestBlockEntity> OBSIDIAN_CHEST_BLOCK_ENTITY = create("obsidian_chest", 
-            BlockEntityType.Builder.create(ObsidianChestBlockEntity::new, AtBlocks.OBSIDIAN_CHEST));
+            BlockEntityType.Builder.create(ObsidianChestBlockEntity::new, AtBlock.OBSIDIAN_CHEST));
     
     private static <T extends BlockEntity> BlockEntityType<T> create(String id, BlockEntityType.Builder<T> builder) 
     {

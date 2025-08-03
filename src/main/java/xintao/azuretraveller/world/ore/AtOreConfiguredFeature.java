@@ -14,11 +14,11 @@ import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.feature.FeatureConfig;
 import net.minecraft.world.gen.feature.OreFeatureConfig;
 import xintao.azuretraveller.AzureTraveller;
-import xintao.azuretraveller.block.AtBlocks;
+import xintao.azuretraveller.block.AtBlock;
 
 import java.util.List;
 
-public class AtOreConfiguredFeatures
+public class AtOreConfiguredFeature
 {
     public static final RegistryKey<ConfiguredFeature<?, ?>> SILVER_ORE_CONFIGURED = of("silver_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> NETHER_MYTHRIL_ORE_CONFIGURED = of("nether_mythril_ore");
@@ -31,7 +31,7 @@ public class AtOreConfiguredFeatures
         RuleTest endStoneReplace = new BlockMatchRuleTest(Blocks.END_STONE);
 
         List<OreFeatureConfig.Target> overWorldTarget = List.of(
-                OreFeatureConfig.createTarget(stoneReplace, AtBlocks.SILVER_ORE.getDefaultState())
+                OreFeatureConfig.createTarget(stoneReplace, AtBlock.SILVER_ORE.getDefaultState())
             );
         List<OreFeatureConfig.Target> netherTarget = List.of();
         List<OreFeatureConfig.Target> endTarget = List.of();

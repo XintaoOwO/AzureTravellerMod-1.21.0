@@ -8,9 +8,9 @@ import net.minecraft.data.client.Models;
 import net.minecraft.data.family.BlockFamily;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.state.property.Properties;
-import xintao.azuretraveller.block.AtBlockFamilies;
-import xintao.azuretraveller.block.AtBlocks;
-import xintao.azuretraveller.item.AtItems;
+import xintao.azuretraveller.block.AtBlockFamily;
+import xintao.azuretraveller.block.AtBlock;
+import xintao.azuretraveller.item.AtItem;
 
 public class AtModelProvider extends FabricModelProvider
 {
@@ -23,80 +23,80 @@ public class AtModelProvider extends FabricModelProvider
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) 
     {
-        AtBlockFamilies.getFamily()
+        AtBlockFamily.getFamily()
                 .filter(BlockFamily::shouldGenerateModels)
                 .forEach(blockFamily ->
                         blockStateModelGenerator.registerCubeAllModelTexturePool(blockFamily.getBaseBlock())
                                 .family(blockFamily));
-        blockStateModelGenerator.registerSimpleCubeAll(AtBlocks.SILVER_ORE);
-        blockStateModelGenerator.registerSimpleCubeAll(AtBlocks.SILVER_BLOCK);
-        blockStateModelGenerator.registerSimpleCubeAll(AtBlocks.RAW_SILVER_BLOCK);
-        blockStateModelGenerator.registerSimpleCubeAll(AtBlocks.MYTHRIL_ORE);
-        blockStateModelGenerator.registerSimpleCubeAll(AtBlocks.RAW_MYTHRIL_BLOCK);
-        blockStateModelGenerator.registerSimpleCubeAll(AtBlocks.CELESTITE_ORE);
-        blockStateModelGenerator.registerSimpleCubeAll(AtBlocks.CELESTITE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(AtBlock.SILVER_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(AtBlock.SILVER_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(AtBlock.RAW_SILVER_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(AtBlock.MYTHRIL_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(AtBlock.RAW_MYTHRIL_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(AtBlock.CELESTITE_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(AtBlock.CELESTITE_BLOCK);
         
-        blockStateModelGenerator.registerLog(AtBlocks.CELESTE_LOG)
-                .log(AtBlocks.CELESTE_LOG).wood(AtBlocks.CELESTE_WOOD);
-        blockStateModelGenerator.registerLog(AtBlocks.STRIPPED_CELESTE_LOG)
-                .log(AtBlocks.STRIPPED_CELESTE_LOG).wood(AtBlocks.STRIPPED_CELESTE_WOOD);
-        blockStateModelGenerator.registerLog(AtBlocks.PEAR_LOG)
-                .log(AtBlocks.PEAR_LOG).wood(AtBlocks.PEAR_WOOD);
-        blockStateModelGenerator.registerLog(AtBlocks.STRIPPED_PEAR_LOG)
-                .log(AtBlocks.STRIPPED_PEAR_LOG).wood(AtBlocks.STRIPPED_PEAR_WOOD);
-        blockStateModelGenerator.registerLog(AtBlocks.PEACH_LOG)
-                .log(AtBlocks.PEACH_LOG).wood(AtBlocks.PEACH_WOOD);
-        blockStateModelGenerator.registerLog(AtBlocks.STRIPPED_PEACH_LOG)
-                .log(AtBlocks.STRIPPED_PEACH_LOG).wood(AtBlocks.STRIPPED_PEACH_WOOD);
+        blockStateModelGenerator.registerLog(AtBlock.CELESTE_LOG)
+                .log(AtBlock.CELESTE_LOG).wood(AtBlock.CELESTE_WOOD);
+        blockStateModelGenerator.registerLog(AtBlock.STRIPPED_CELESTE_LOG)
+                .log(AtBlock.STRIPPED_CELESTE_LOG).wood(AtBlock.STRIPPED_CELESTE_WOOD);
+        blockStateModelGenerator.registerLog(AtBlock.PEAR_LOG)
+                .log(AtBlock.PEAR_LOG).wood(AtBlock.PEAR_WOOD);
+        blockStateModelGenerator.registerLog(AtBlock.STRIPPED_PEAR_LOG)
+                .log(AtBlock.STRIPPED_PEAR_LOG).wood(AtBlock.STRIPPED_PEAR_WOOD);
+        blockStateModelGenerator.registerLog(AtBlock.PEACH_LOG)
+                .log(AtBlock.PEACH_LOG).wood(AtBlock.PEACH_WOOD);
+        blockStateModelGenerator.registerLog(AtBlock.STRIPPED_PEACH_LOG)
+                .log(AtBlock.STRIPPED_PEACH_LOG).wood(AtBlock.STRIPPED_PEACH_WOOD);
         
-        blockStateModelGenerator.registerSimpleCubeAll(AtBlocks.PEAR_LEAVES);
-        blockStateModelGenerator.registerSimpleCubeAll(AtBlocks.PEACH_LEAVES);
-        blockStateModelGenerator.registerSimpleCubeAll(AtBlocks.CELESTE_LEAVES);
+        blockStateModelGenerator.registerSimpleCubeAll(AtBlock.PEAR_LEAVES);
+        blockStateModelGenerator.registerSimpleCubeAll(AtBlock.PEACH_LEAVES);
+        blockStateModelGenerator.registerSimpleCubeAll(AtBlock.CELESTE_LEAVES);
         
-        blockStateModelGenerator.registerTintableCross(AtBlocks.PEAR_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
-        blockStateModelGenerator.registerTintableCross(AtBlocks.PEACH_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
-        blockStateModelGenerator.registerTintableCross(AtBlocks.CELESTE_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerTintableCross(AtBlock.PEAR_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerTintableCross(AtBlock.PEACH_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerTintableCross(AtBlock.CELESTE_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
         
-        blockStateModelGenerator.registerSimpleState(AtBlocks.OBSIDIAN_CHEST);
+        blockStateModelGenerator.registerSimpleState(AtBlock.OBSIDIAN_CHEST);
         
-        blockStateModelGenerator.registerCrop(AtBlocks.STRAWBERRY_CROP, Properties.AGE_3, 0, 1, 2, 3);
+        blockStateModelGenerator.registerCrop(AtBlock.STRAWBERRY_CROP, Properties.AGE_3, 0, 1, 2, 3);
     }
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator)
     {
-        itemModelGenerator.register(AtItems.SILVER_INGOT, Models.GENERATED);
-        itemModelGenerator.register(AtItems.RAW_SILVER, Models.GENERATED);
-        itemModelGenerator.register(AtItems.OBSIDIAN_INGOT, Models.GENERATED);
-        itemModelGenerator.register(AtItems.MYTHRIL_INGOT, Models.GENERATED);
-        itemModelGenerator.register(AtItems.RAW_MYTHRIL, Models.GENERATED);
-        itemModelGenerator.register(AtItems.CELESTITE_INGOT, Models.GENERATED);
-        itemModelGenerator.register(AtItems.RAW_CELESTITE, Models.GENERATED);
+        itemModelGenerator.register(AtItem.SILVER_INGOT, Models.GENERATED);
+        itemModelGenerator.register(AtItem.RAW_SILVER, Models.GENERATED);
+        itemModelGenerator.register(AtItem.OBSIDIAN_INGOT, Models.GENERATED);
+        itemModelGenerator.register(AtItem.MYTHRIL_INGOT, Models.GENERATED);
+        itemModelGenerator.register(AtItem.RAW_MYTHRIL, Models.GENERATED);
+        itemModelGenerator.register(AtItem.CELESTITE_INGOT, Models.GENERATED);
+        itemModelGenerator.register(AtItem.RAW_CELESTITE, Models.GENERATED);
         
-        itemModelGenerator.register(AtItems.MYTHRIL_SWORD, Models.HANDHELD);
-        itemModelGenerator.register(AtItems.MYTHRIL_PICKAXE, Models.HANDHELD);
-        itemModelGenerator.register(AtItems.MYTHRIL_AXE, Models.HANDHELD);
-        itemModelGenerator.register(AtItems.MYTHRIL_SHOVEL, Models.HANDHELD);
-        itemModelGenerator.register(AtItems.MYTHRIL_HOE, Models.HANDHELD);
-        itemModelGenerator.register(AtItems.MYTHRIL_PICKAXE_AXE, Models.HANDHELD);
+        itemModelGenerator.register(AtItem.MYTHRIL_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(AtItem.MYTHRIL_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(AtItem.MYTHRIL_AXE, Models.HANDHELD);
+        itemModelGenerator.register(AtItem.MYTHRIL_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(AtItem.MYTHRIL_HOE, Models.HANDHELD);
+        itemModelGenerator.register(AtItem.MYTHRIL_PICKAXE_AXE, Models.HANDHELD);
         
-        itemModelGenerator.registerArmor((ArmorItem) AtItems.MYTHRIL_HELMET);
-        itemModelGenerator.registerArmor((ArmorItem) AtItems.MYTHRIL_CHESTPLATE);
-        itemModelGenerator.registerArmor((ArmorItem) AtItems.MYTHRIL_LEGGINGS);
-        itemModelGenerator.registerArmor((ArmorItem) AtItems.MYTHRIL_BOOTS);
-        itemModelGenerator.registerArmor((ArmorItem) AtItems.OBSIDIAN_HELMET);
-        itemModelGenerator.registerArmor((ArmorItem) AtItems.OBSIDIAN_CHESTPLATE);
-        itemModelGenerator.registerArmor((ArmorItem) AtItems.OBSIDIAN_LEGGINGS);
-        itemModelGenerator.registerArmor((ArmorItem) AtItems.OBSIDIAN_BOOTS);
+        itemModelGenerator.registerArmor((ArmorItem) AtItem.MYTHRIL_HELMET);
+        itemModelGenerator.registerArmor((ArmorItem) AtItem.MYTHRIL_CHESTPLATE);
+        itemModelGenerator.registerArmor((ArmorItem) AtItem.MYTHRIL_LEGGINGS);
+        itemModelGenerator.registerArmor((ArmorItem) AtItem.MYTHRIL_BOOTS);
+        itemModelGenerator.registerArmor((ArmorItem) AtItem.OBSIDIAN_HELMET);
+        itemModelGenerator.registerArmor((ArmorItem) AtItem.OBSIDIAN_CHESTPLATE);
+        itemModelGenerator.registerArmor((ArmorItem) AtItem.OBSIDIAN_LEGGINGS);
+        itemModelGenerator.registerArmor((ArmorItem) AtItem.OBSIDIAN_BOOTS);
         
-        itemModelGenerator.register(AtItems.OBSIDIAN_SWORD, Models.HANDHELD);
-        itemModelGenerator.register(AtItems.OBSIDIAN_PICKAXE, Models.HANDHELD);
-        itemModelGenerator.register(AtItems.OBSIDIAN_AXE, Models.HANDHELD);
-        itemModelGenerator.register(AtItems.OBSIDIAN_SHOVEL, Models.HANDHELD);
-        itemModelGenerator.register(AtItems.OBSIDIAN_HOE, Models.HANDHELD);
+        itemModelGenerator.register(AtItem.OBSIDIAN_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(AtItem.OBSIDIAN_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(AtItem.OBSIDIAN_AXE, Models.HANDHELD);
+        itemModelGenerator.register(AtItem.OBSIDIAN_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(AtItem.OBSIDIAN_HOE, Models.HANDHELD);
         
-        itemModelGenerator.register(AtItems.BLUEBERRY, Models.GENERATED);
-        itemModelGenerator.register(AtItems.STRAWBERRY, Models.GENERATED);
-        itemModelGenerator.register(AtItems.LUCKY_APPLE, Models.GENERATED);
+        itemModelGenerator.register(AtItem.BLUEBERRY, Models.GENERATED);
+        itemModelGenerator.register(AtItem.STRAWBERRY, Models.GENERATED);
+        itemModelGenerator.register(AtItem.LUCKY_APPLE, Models.GENERATED);
     }
 }

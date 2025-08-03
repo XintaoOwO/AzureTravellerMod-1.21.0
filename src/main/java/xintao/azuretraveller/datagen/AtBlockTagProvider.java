@@ -4,7 +4,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
-import xintao.azuretraveller.block.AtBlocks;
+import xintao.azuretraveller.block.AtBlock;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -20,23 +20,23 @@ public class AtBlockTagProvider extends FabricTagProvider.BlockTagProvider
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup)
     {
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
-                .add(AtBlocks.SILVER_ORE)
-                .add(AtBlocks.SILVER_BLOCK)
-                .add(AtBlocks.RAW_SILVER_BLOCK)
-                .add(AtBlocks.MYTHRIL_ORE)
-                .add(AtBlocks.MYTHRIL_BLOCK)
-                .add(AtBlocks.RAW_MYTHRIL_BLOCK)
-                .add(AtBlocks.CELESTITE_ORE)
-                .add(AtBlocks.CELESTITE_BLOCK)
-                .add(AtBlocks.OBSIDIAN_CHEST);
+                .add(AtBlock.SILVER_ORE)
+                .add(AtBlock.SILVER_BLOCK)
+                .add(AtBlock.RAW_SILVER_BLOCK)
+                .add(AtBlock.MYTHRIL_ORE)
+                .add(AtBlock.MYTHRIL_BLOCK)
+                .add(AtBlock.RAW_MYTHRIL_BLOCK)
+                .add(AtBlock.CELESTITE_ORE)
+                .add(AtBlock.CELESTITE_BLOCK)
+                .add(AtBlock.OBSIDIAN_CHEST);
         
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
-                .add(AtBlocks.SILVER_ORE)
-                .add(AtBlocks.SILVER_BLOCK)
-                .add(AtBlocks.RAW_SILVER_BLOCK);
+                .add(AtBlock.SILVER_ORE)
+                .add(AtBlock.SILVER_BLOCK)
+                .add(AtBlock.RAW_SILVER_BLOCK);
         
         getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
-                .add(AtBlocks.OBSIDIAN_CHEST);
+                .add(AtBlock.OBSIDIAN_CHEST);
         
         /*
         getOrCreateTagBuilder(BlockTags.INCORRECT_FOR_DIAMOND_TOOL)
@@ -73,13 +73,13 @@ public class AtBlockTagProvider extends FabricTagProvider.BlockTagProvider
         */
         
         getOrCreateTagBuilder(BlockTags.LOGS_THAT_BURN)
-                .add(AtBlocks.CELESTE_LOG)
-                .add(AtBlocks.CELESTE_WOOD)
-                .add(AtBlocks.STRIPPED_CELESTE_LOG)
-                .add(AtBlocks.STRIPPED_CELESTE_WOOD);
+                .add(AtBlock.CELESTE_LOG)
+                .add(AtBlock.CELESTE_WOOD)
+                .add(AtBlock.STRIPPED_CELESTE_LOG)
+                .add(AtBlock.STRIPPED_CELESTE_WOOD);
         
         getOrCreateTagBuilder(BlockTags.FENCES)
-                .add(AtBlocks.MYTHRIL_FENCE);
+                .add(AtBlock.MYTHRIL_FENCE);
         /*
         // 这个标签决定模组添加的栅栏能否与木质的栅栏相连接。如果不添加此标签，那么栅栏将会与地狱砖栅栏相连。
         // 因为在游戏里，木质栅栏作为一个整体，共用Wooden_Fences这个属性标签。
@@ -87,12 +87,12 @@ public class AtBlockTagProvider extends FabricTagProvider.BlockTagProvider
                 .add(ModBlocks.MYTHRIL_FENCE);
         */
         getOrCreateTagBuilder(BlockTags.FENCE_GATES)
-                .add(AtBlocks.MYTHRIL_FENCE_GATE);
+                .add(AtBlock.MYTHRIL_FENCE_GATE);
         
         getOrCreateTagBuilder(BlockTags.WALLS)
-                .add(AtBlocks.MYTHRIL_WALL);
+                .add(AtBlock.MYTHRIL_WALL);
         
         getOrCreateTagBuilder(BlockTags.BUTTONS)
-                .add(AtBlocks.MYTHRIL_BUTTON);
+                .add(AtBlock.MYTHRIL_BUTTON);
     }
 }

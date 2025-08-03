@@ -10,7 +10,7 @@ import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.world.World;
-import xintao.azuretraveller.item.AtArmorMaterials;
+import xintao.azuretraveller.item.AtArmorMaterial;
 
 import java.util.Arrays;
 import java.util.List;
@@ -20,7 +20,7 @@ public class AtArmorItem extends ArmorItem
 {
     private static final Map<ArmorMaterial, List<StatusEffectInstance>> MAP = 
             (new ImmutableMap.Builder<ArmorMaterial, List<StatusEffectInstance>>())
-                    .put(AtArmorMaterials.MYTHRIL.value(), 
+                    .put(AtArmorMaterial.MYTHRIL.value(),
                             Arrays.asList(
                                     new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 
                                             10, 0, false, false, true), 

@@ -5,9 +5,8 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.minecraft.registry.RegistryBuilder;
 import net.minecraft.registry.RegistryKeys;
 import xintao.azuretraveller.datagen.*;
-import xintao.azuretraveller.enchantment.AtEnchantments;
-import xintao.azuretraveller.world.ore.AtOreConfiguredFeatures;
-import xintao.azuretraveller.world.ore.AtOrePlacedFeatures;
+import xintao.azuretraveller.world.ore.AtOreConfiguredFeature;
+import xintao.azuretraveller.world.ore.AtOrePlacedFeature;
 import xintao.azuretraveller.world.tree.AtTreeConfiguredFeatures;
 import xintao.azuretraveller.world.tree.AtTreePlacedFeatures;
 
@@ -33,8 +32,8 @@ public class AzureTravellerDataGenerator implements DataGeneratorEntrypoint
 	{
 		registryBuilder.addRegistry(RegistryKeys.CONFIGURED_FEATURE, AtTreeConfiguredFeatures::bootstrap);
 		registryBuilder.addRegistry(RegistryKeys.PLACED_FEATURE, AtTreePlacedFeatures::bootstrap);
-		registryBuilder.addRegistry(RegistryKeys.CONFIGURED_FEATURE, AtOreConfiguredFeatures::bootstrap);
-		registryBuilder.addRegistry(RegistryKeys.PLACED_FEATURE, AtOrePlacedFeatures::bootstrap);
+		registryBuilder.addRegistry(RegistryKeys.CONFIGURED_FEATURE, AtOreConfiguredFeature::bootstrap);
+		registryBuilder.addRegistry(RegistryKeys.PLACED_FEATURE, AtOrePlacedFeature::bootstrap);
 		//registryBuilder.addRegistry(RegistryKeys.ENCHANTMENT, AtEnchantments::bootstrap);
 	}
 }

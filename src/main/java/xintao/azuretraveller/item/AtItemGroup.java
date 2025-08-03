@@ -9,7 +9,7 @@ import net.minecraft.registry.RegistryKeys;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import xintao.azuretraveller.AzureTraveller;
-import xintao.azuretraveller.block.AtBlocks;
+import xintao.azuretraveller.block.AtBlock;
 
 public class AtItemGroup
 {
@@ -29,16 +29,16 @@ public class AtItemGroup
         Registry.register(Registries.ITEM_GROUP, AT_Materials, 
                 ItemGroup.create(null, -3)
                         .displayName(Text.translatable("itemGroup.at_materials"))
-                        .icon(() -> new ItemStack(AtItems.CELESTITE_INGOT))
+                        .icon(() -> new ItemStack(AtItem.CELESTITE_INGOT))
                         .entries((displayContext, entries) -> 
                          {
-                             entries.add(AtItems.RAW_SILVER);
-                             entries.add(AtItems.RAW_MYTHRIL);
-                             entries.add(AtItems.RAW_CELESTITE);
-                             entries.add(AtItems.SILVER_INGOT);
-                             entries.add(AtItems.OBSIDIAN_INGOT);
-                             entries.add(AtItems.MYTHRIL_INGOT);
-                             entries.add(AtItems.CELESTITE_INGOT);
+                             entries.add(AtItem.RAW_SILVER);
+                             entries.add(AtItem.RAW_MYTHRIL);
+                             entries.add(AtItem.RAW_CELESTITE);
+                             entries.add(AtItem.SILVER_INGOT);
+                             entries.add(AtItem.OBSIDIAN_INGOT);
+                             entries.add(AtItem.MYTHRIL_INGOT);
+                             entries.add(AtItem.CELESTITE_INGOT);
                          }
                 )
                 .build()
@@ -47,34 +47,34 @@ public class AtItemGroup
         Registry.register(Registries.ITEM_GROUP, AT_Building_Blocks,
                 ItemGroup.create(null, -5)
                         .displayName(Text.translatable("itemGroup.at_building_blocks"))
-                        .icon(() -> new ItemStack(AtBlocks.MYTHRIL_BLOCK))
+                        .icon(() -> new ItemStack(AtBlock.MYTHRIL_BLOCK))
                         .entries((displayContext, entries) ->
                         {
-                            entries.add(AtBlocks.PEAR_LOG);
-                            entries.add(AtBlocks.PEACH_LOG);
-                            entries.add(AtBlocks.CELESTE_LOG);
-                            entries.add(AtBlocks.PEAR_WOOD);
-                            entries.add(AtBlocks.PEACH_WOOD);
-                            entries.add(AtBlocks.CELESTE_WOOD);
-                            entries.add(AtBlocks.CELESTE_PLANKS);
-                            entries.add(AtBlocks.STRIPPED_PEAR_LOG);
-                            entries.add(AtBlocks.STRIPPED_PEACH_LOG);
-                            entries.add(AtBlocks.STRIPPED_CELESTE_LOG);
-                            entries.add(AtBlocks.STRIPPED_PEAR_WOOD);
-                            entries.add(AtBlocks.STRIPPED_PEACH_WOOD);
-                            entries.add(AtBlocks.STRIPPED_CELESTE_WOOD);
+                            entries.add(AtBlock.PEAR_LOG);
+                            entries.add(AtBlock.PEACH_LOG);
+                            entries.add(AtBlock.CELESTE_LOG);
+                            entries.add(AtBlock.PEAR_WOOD);
+                            entries.add(AtBlock.PEACH_WOOD);
+                            entries.add(AtBlock.CELESTE_WOOD);
+                            entries.add(AtBlock.CELESTE_PLANKS);
+                            entries.add(AtBlock.STRIPPED_PEAR_LOG);
+                            entries.add(AtBlock.STRIPPED_PEACH_LOG);
+                            entries.add(AtBlock.STRIPPED_CELESTE_LOG);
+                            entries.add(AtBlock.STRIPPED_PEAR_WOOD);
+                            entries.add(AtBlock.STRIPPED_PEACH_WOOD);
+                            entries.add(AtBlock.STRIPPED_CELESTE_WOOD);
                             
-                            entries.add(AtBlocks.SILVER_ORE);
-                            entries.add(AtBlocks.MYTHRIL_ORE);
-                            entries.add(AtBlocks.CELESTITE_ORE);
-                            entries.add(AtBlocks.SILVER_BLOCK);
-                            entries.add(AtBlocks.MYTHRIL_BLOCK);
-                            entries.add(AtBlocks.CELESTITE_BLOCK);
-                            entries.add(AtBlocks.RAW_SILVER_BLOCK);
-                            entries.add(AtBlocks.RAW_MYTHRIL_BLOCK);
+                            entries.add(AtBlock.SILVER_ORE);
+                            entries.add(AtBlock.MYTHRIL_ORE);
+                            entries.add(AtBlock.CELESTITE_ORE);
+                            entries.add(AtBlock.SILVER_BLOCK);
+                            entries.add(AtBlock.MYTHRIL_BLOCK);
+                            entries.add(AtBlock.CELESTITE_BLOCK);
+                            entries.add(AtBlock.RAW_SILVER_BLOCK);
+                            entries.add(AtBlock.RAW_MYTHRIL_BLOCK);
                             
-                            entries.add(AtBlocks.MYTHRIL_SLAB);
-                            entries.add(AtBlocks.MYTHRIL_STAIRS);
+                            entries.add(AtBlock.MYTHRIL_SLAB);
+                            entries.add(AtBlock.MYTHRIL_STAIRS);
                         }
                 )
                 .build()
@@ -83,27 +83,27 @@ public class AtItemGroup
         Registry.register(Registries.ITEM_GROUP, AT_Decorative_Blocks, 
                 ItemGroup.create(null, -4)
                         .displayName(Text.translatable("itemGroup.at_decorative_blocks"))
-                        .icon(() -> new ItemStack(AtBlocks.MYTHRIL_FENCE))
+                        .icon(() -> new ItemStack(AtBlock.MYTHRIL_FENCE))
                         .entries((displayContext, entries) ->
                         {
-                            entries.add(AtBlocks.PEAR_SAPLING);
-                            entries.add(AtBlocks.PEACH_SAPLING);
-                            entries.add(AtBlocks.CELESTE_SAPLING);
-                            entries.add(AtBlocks.PEAR_LEAVES);
-                            entries.add(AtBlocks.PEACH_LEAVES);
-                            entries.add(AtBlocks.CELESTE_LEAVES);
+                            entries.add(AtBlock.PEAR_SAPLING);
+                            entries.add(AtBlock.PEACH_SAPLING);
+                            entries.add(AtBlock.CELESTE_SAPLING);
+                            entries.add(AtBlock.PEAR_LEAVES);
+                            entries.add(AtBlock.PEACH_LEAVES);
+                            entries.add(AtBlock.CELESTE_LEAVES);
                             
-                            entries.add(AtBlocks.CELESTE_WOOD_DOOR);
+                            entries.add(AtBlock.CELESTE_WOOD_DOOR);
                             
-                            entries.add(AtBlocks.MYTHRIL_FENCE);
-                            entries.add(AtBlocks.MYTHRIL_FENCE_GATE);
-                            entries.add(AtBlocks.MYTHRIL_WALL);
-                            entries.add(AtBlocks.MYTHRIL_BUTTON);
-                            entries.add(AtBlocks.MYTHRIL_PRESSURE_PLATE);
-                            entries.add(AtBlocks.MYTHRIL_DOOR);
-                            entries.add(AtBlocks.MYTHRIL_TRAPDOOR);
+                            entries.add(AtBlock.MYTHRIL_FENCE);
+                            entries.add(AtBlock.MYTHRIL_FENCE_GATE);
+                            entries.add(AtBlock.MYTHRIL_WALL);
+                            entries.add(AtBlock.MYTHRIL_BUTTON);
+                            entries.add(AtBlock.MYTHRIL_PRESSURE_PLATE);
+                            entries.add(AtBlock.MYTHRIL_DOOR);
+                            entries.add(AtBlock.MYTHRIL_TRAPDOOR);
                             
-                            entries.add(AtBlocks.OBSIDIAN_CHEST);
+                            entries.add(AtBlock.OBSIDIAN_CHEST);
                         }
                 )
                 .build()
@@ -112,31 +112,31 @@ public class AtItemGroup
         Registry.register(Registries.ITEM_GROUP, AT_Tools_Armors,
                 ItemGroup.create(null, -2)
                         .displayName(Text.translatable("itemGroup.at_tools_armors"))
-                        .icon(() -> new ItemStack(AtItems.MYTHRIL_PICKAXE))
+                        .icon(() -> new ItemStack(AtItem.MYTHRIL_PICKAXE))
                         .entries((displayContext, entries) ->
                         {
-                            entries.add(AtItems.OBSIDIAN_SWORD);
-                            entries.add(AtItems.OBSIDIAN_PICKAXE);
-                            entries.add(AtItems.OBSIDIAN_AXE);
-                            entries.add(AtItems.OBSIDIAN_SHOVEL);
-                            entries.add(AtItems.OBSIDIAN_HOE);
+                            entries.add(AtItem.OBSIDIAN_SWORD);
+                            entries.add(AtItem.OBSIDIAN_PICKAXE);
+                            entries.add(AtItem.OBSIDIAN_AXE);
+                            entries.add(AtItem.OBSIDIAN_SHOVEL);
+                            entries.add(AtItem.OBSIDIAN_HOE);
                             
-                            entries.add(AtItems.MYTHRIL_SWORD);
-                            entries.add(AtItems.MYTHRIL_PICKAXE);
-                            entries.add(AtItems.MYTHRIL_AXE);
-                            entries.add(AtItems.MYTHRIL_SHOVEL);
-                            entries.add(AtItems.MYTHRIL_HOE);
-                            entries.add(AtItems.MYTHRIL_PICKAXE_AXE);
+                            entries.add(AtItem.MYTHRIL_SWORD);
+                            entries.add(AtItem.MYTHRIL_PICKAXE);
+                            entries.add(AtItem.MYTHRIL_AXE);
+                            entries.add(AtItem.MYTHRIL_SHOVEL);
+                            entries.add(AtItem.MYTHRIL_HOE);
+                            entries.add(AtItem.MYTHRIL_PICKAXE_AXE);
                             
-                            entries.add(AtItems.OBSIDIAN_HELMET);
-                            entries.add(AtItems.OBSIDIAN_CHESTPLATE);
-                            entries.add(AtItems.OBSIDIAN_LEGGINGS);
-                            entries.add(AtItems.OBSIDIAN_BOOTS);
+                            entries.add(AtItem.OBSIDIAN_HELMET);
+                            entries.add(AtItem.OBSIDIAN_CHESTPLATE);
+                            entries.add(AtItem.OBSIDIAN_LEGGINGS);
+                            entries.add(AtItem.OBSIDIAN_BOOTS);
                             
-                            entries.add(AtItems.MYTHRIL_HELMET);
-                            entries.add(AtItems.MYTHRIL_CHESTPLATE);
-                            entries.add(AtItems.MYTHRIL_LEGGINGS);
-                            entries.add(AtItems.MYTHRIL_BOOTS);
+                            entries.add(AtItem.MYTHRIL_HELMET);
+                            entries.add(AtItem.MYTHRIL_CHESTPLATE);
+                            entries.add(AtItem.MYTHRIL_LEGGINGS);
+                            entries.add(AtItem.MYTHRIL_BOOTS);
                         }
                 )
                 .build()
@@ -145,14 +145,14 @@ public class AtItemGroup
         Registry.register(Registries.ITEM_GROUP, AT_Food_Crops, 
                 ItemGroup.create(null, -1)
                         .displayName(Text.translatable("itemGroup.at_food_crops"))
-                        .icon(() -> new ItemStack(AtItems.STRAWBERRY))
+                        .icon(() -> new ItemStack(AtItem.STRAWBERRY))
                         .entries((displayContext, entries) ->
                         {
-                            entries.add(AtItems.BLUEBERRY);
-                            entries.add(AtItems.STRAWBERRY);
-                            entries.add(AtItems.LUCKY_APPLE);
+                            entries.add(AtItem.BLUEBERRY);
+                            entries.add(AtItem.STRAWBERRY);
+                            entries.add(AtItem.LUCKY_APPLE);
                             
-                            entries.add(AtItems.STRAWBERRY_SEEDS);
+                            entries.add(AtItem.STRAWBERRY_SEEDS);
                         }
                 )
                 .build()

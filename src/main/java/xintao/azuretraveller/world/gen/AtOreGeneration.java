@@ -3,7 +3,7 @@ package xintao.azuretraveller.world.gen;
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.minecraft.world.gen.GenerationStep;
-import xintao.azuretraveller.world.ore.AtOrePlacedFeatures;
+import xintao.azuretraveller.world.ore.AtOrePlacedFeature;
 
 public class AtOreGeneration
 {
@@ -12,6 +12,6 @@ public class AtOreGeneration
         BiomeModifications.addFeature(
                 BiomeSelectors.foundInOverworld(), 
                 GenerationStep.Feature.UNDERGROUND_ORES,
-                AtOrePlacedFeatures.SILVER_ORE_PLACED);
+                AtOrePlacedFeature.SILVER_ORE_PLACED);
     }
 }

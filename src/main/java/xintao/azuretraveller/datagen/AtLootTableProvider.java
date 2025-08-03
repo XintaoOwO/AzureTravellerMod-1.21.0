@@ -17,8 +17,8 @@ import net.minecraft.loot.provider.number.UniformLootNumberProvider;
 import net.minecraft.predicate.StatePredicate;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.RegistryWrapper;
-import xintao.azuretraveller.block.AtBlocks;
-import xintao.azuretraveller.item.AtItems;
+import xintao.azuretraveller.block.AtBlock;
+import xintao.azuretraveller.item.AtItem;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -33,19 +33,19 @@ public class AtLootTableProvider extends FabricBlockLootTableProvider
     @Override
     public void generate()
     {
-        addDrop(AtBlocks.MYTHRIL_BLOCK);
-        addDrop(AtBlocks.RAW_MYTHRIL_BLOCK);
-        addDrop(AtBlocks.SILVER_BLOCK);
-        addDrop(AtBlocks.RAW_SILVER_BLOCK);
-        addDrop(AtBlocks.CELESTITE_BLOCK);
-        addDrop(AtBlocks.SILVER_ORE, modOreDrop(AtBlocks.SILVER_ORE, AtItems.RAW_SILVER));
-        addDrop(AtBlocks.MYTHRIL_ORE, modOreDrop(AtBlocks.MYTHRIL_ORE, AtItems.RAW_MYTHRIL));
-        addDrop(AtBlocks.CELESTITE_ORE, modOreDrop(AtBlocks.CELESTITE_ORE, AtItems.RAW_CELESTITE));
+        addDrop(AtBlock.MYTHRIL_BLOCK);
+        addDrop(AtBlock.RAW_MYTHRIL_BLOCK);
+        addDrop(AtBlock.SILVER_BLOCK);
+        addDrop(AtBlock.RAW_SILVER_BLOCK);
+        addDrop(AtBlock.CELESTITE_BLOCK);
+        addDrop(AtBlock.SILVER_ORE, modOreDrop(AtBlock.SILVER_ORE, AtItem.RAW_SILVER));
+        addDrop(AtBlock.MYTHRIL_ORE, modOreDrop(AtBlock.MYTHRIL_ORE, AtItem.RAW_MYTHRIL));
+        addDrop(AtBlock.CELESTITE_ORE, modOreDrop(AtBlock.CELESTITE_ORE, AtItem.RAW_CELESTITE));
 
-        LootCondition.Builder builderStrawberry = BlockStatePropertyLootCondition.builder(AtBlocks.STRAWBERRY_CROP)
+        LootCondition.Builder builderStrawberry = BlockStatePropertyLootCondition.builder(AtBlock.STRAWBERRY_CROP)
                 .properties(StatePredicate.Builder.create().exactMatch(CropBlock.AGE, 3));
-        addDrop(AtBlocks.STRAWBERRY_CROP, 
-                cropDrops(AtBlocks.STRAWBERRY_CROP, AtItems.STRAWBERRY, AtItems.STRAWBERRY_SEEDS, builderStrawberry));
+        addDrop(AtBlock.STRAWBERRY_CROP,
+                cropDrops(AtBlock.STRAWBERRY_CROP, AtItem.STRAWBERRY, AtItem.STRAWBERRY_SEEDS, builderStrawberry));
     }
 
     public LootTable.Builder modOreDrop(Block drop, Item dropItem) 

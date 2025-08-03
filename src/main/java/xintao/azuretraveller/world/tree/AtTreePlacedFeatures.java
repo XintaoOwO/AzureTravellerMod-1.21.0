@@ -12,7 +12,7 @@ import net.minecraft.world.gen.feature.PlacedFeatures;
 import net.minecraft.world.gen.feature.VegetationPlacedFeatures;
 import net.minecraft.world.gen.placementmodifier.PlacementModifier;
 import xintao.azuretraveller.AzureTraveller;
-import xintao.azuretraveller.block.AtBlocks;
+import xintao.azuretraveller.block.AtBlock;
 
 import java.util.List;
 
@@ -31,7 +31,7 @@ public class AtTreePlacedFeatures
                 .getOrThrow(AtTreeConfiguredFeatures.CELESTE_TREE_CONFIGURED),
                     VegetationPlacedFeatures.treeModifiersWithWouldSurvive(
                         PlacedFeatures.createCountExtraModifier(1, 0.1f, 2), 
-                        AtBlocks.CELESTE_SAPLING
+                        AtBlock.CELESTE_SAPLING
                     )
         );
 
@@ -39,7 +39,7 @@ public class AtTreePlacedFeatures
                 .getOrThrow(AtTreeConfiguredFeatures.PEAR_TREE_CONFIGURED),
                     VegetationPlacedFeatures.treeModifiersWithWouldSurvive(
                         PlacedFeatures.createCountExtraModifier(1, 0.1f, 2),
-                        AtBlocks.PEAR_SAPLING
+                        AtBlock.PEAR_SAPLING
                 )
         );
 
@@ -47,7 +47,7 @@ public class AtTreePlacedFeatures
                 .getOrThrow(AtTreeConfiguredFeatures.PEACH_TREE_CONFIGURED),
                     VegetationPlacedFeatures.treeModifiersWithWouldSurvive(
                         PlacedFeatures.createCountExtraModifier(1, 0.1f, 2),
-                        AtBlocks.PEACH_SAPLING
+                        AtBlock.PEACH_SAPLING
                 )
         );
     }

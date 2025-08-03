@@ -16,7 +16,7 @@ import java.util.EnumMap;
 import java.util.List;
 import java.util.function.Supplier;
 
-public class AtArmorMaterials
+public class AtArmorMaterial
 {
     public static final RegistryEntry<ArmorMaterial> MYTHRIL = 
             register("mythril", Util.make(new EnumMap(ArmorItem.Type.class), 
@@ -30,7 +30,7 @@ public class AtArmorMaterials
                 }
             ), 
             15, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 3.0f, 0.1f, 
-                    () -> Ingredient.ofItems(AtItems.MYTHRIL_INGOT));
+                    () -> Ingredient.ofItems(AtItem.MYTHRIL_INGOT));
 
     public static final RegistryEntry<ArmorMaterial> OBSIDIAN =
             register("obsidian", Util.make(new EnumMap(ArmorItem.Type.class),
@@ -44,7 +44,7 @@ public class AtArmorMaterials
                 }
             ),
                     15, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 1.5f, 0.0f,
-                    () -> Ingredient.ofItems(AtItems.OBSIDIAN_INGOT));
+                    () -> Ingredient.ofItems(AtItem.OBSIDIAN_INGOT));
     
     private static RegistryEntry<ArmorMaterial> register(
             String id,

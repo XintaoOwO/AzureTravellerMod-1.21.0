@@ -5,9 +5,9 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.item.Items;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.ItemTags;
-import xintao.azuretraveller.block.AtBlocks;
-import xintao.azuretraveller.item.AtItems;
-import xintao.azuretraveller.tag.AtItemTags;
+import xintao.azuretraveller.block.AtBlock;
+import xintao.azuretraveller.item.AtItem;
+import xintao.azuretraveller.tag.AtItemTag;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -21,61 +21,61 @@ public class AtItemTagProvider extends FabricTagProvider.ItemTagProvider
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) 
     {
-        getOrCreateTagBuilder(AtItemTags.SUGAR_REFINING_TAG)
+        getOrCreateTagBuilder(AtItemTag.SUGAR_REFINING_TAG)
                 .add(Items.BEETROOT);
         
         getOrCreateTagBuilder(ItemTags.LOGS_THAT_BURN)
-                .add(AtBlocks.CELESTE_LOG.asItem())
-                .add(AtBlocks.CELESTE_WOOD.asItem())
-                .add(AtBlocks.STRIPPED_CELESTE_LOG.asItem())
-                .add(AtBlocks.STRIPPED_CELESTE_WOOD.asItem());
+                .add(AtBlock.CELESTE_LOG.asItem())
+                .add(AtBlock.CELESTE_WOOD.asItem())
+                .add(AtBlock.STRIPPED_CELESTE_LOG.asItem())
+                .add(AtBlock.STRIPPED_CELESTE_WOOD.asItem());
         
         getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR)
-                .add(AtItems.OBSIDIAN_HELMET)
-                .add(AtItems.OBSIDIAN_CHESTPLATE)
-                .add(AtItems.OBSIDIAN_LEGGINGS)
-                .add(AtItems.OBSIDIAN_BOOTS)
-                .add(AtItems.MYTHRIL_HELMET)
-                .add(AtItems.MYTHRIL_CHESTPLATE)
-                .add(AtItems.MYTHRIL_LEGGINGS)
-                .add(AtItems.MYTHRIL_BOOTS);
+                .add(AtItem.OBSIDIAN_HELMET)
+                .add(AtItem.OBSIDIAN_CHESTPLATE)
+                .add(AtItem.OBSIDIAN_LEGGINGS)
+                .add(AtItem.OBSIDIAN_BOOTS)
+                .add(AtItem.MYTHRIL_HELMET)
+                .add(AtItem.MYTHRIL_CHESTPLATE)
+                .add(AtItem.MYTHRIL_LEGGINGS)
+                .add(AtItem.MYTHRIL_BOOTS);
         
         getOrCreateTagBuilder(ItemTags.SWORDS)
-                .add(AtItems.OBSIDIAN_SWORD)
-                .add(AtItems.MYTHRIL_SWORD);
+                .add(AtItem.OBSIDIAN_SWORD)
+                .add(AtItem.MYTHRIL_SWORD);
         
         getOrCreateTagBuilder(ItemTags.PICKAXES)
-                .add(AtItems.OBSIDIAN_PICKAXE)
-                .add(AtItems.MYTHRIL_PICKAXE)
-                .add(AtItems.MYTHRIL_PICKAXE_AXE);
+                .add(AtItem.OBSIDIAN_PICKAXE)
+                .add(AtItem.MYTHRIL_PICKAXE)
+                .add(AtItem.MYTHRIL_PICKAXE_AXE);
         
         getOrCreateTagBuilder(ItemTags.AXES)
-                .add(AtItems.OBSIDIAN_AXE)
-                .add(AtItems.MYTHRIL_AXE)
-                .add(AtItems.MYTHRIL_PICKAXE_AXE);
+                .add(AtItem.OBSIDIAN_AXE)
+                .add(AtItem.MYTHRIL_AXE)
+                .add(AtItem.MYTHRIL_PICKAXE_AXE);
         
         getOrCreateTagBuilder(ItemTags.SHOVELS)
-                .add(AtItems.OBSIDIAN_SHOVEL)
-                .add(AtItems.MYTHRIL_SHOVEL);
+                .add(AtItem.OBSIDIAN_SHOVEL)
+                .add(AtItem.MYTHRIL_SHOVEL);
         
         getOrCreateTagBuilder(ItemTags.HOES)
-                .add(AtItems.OBSIDIAN_HOE)
-                .add(AtItems.MYTHRIL_HOE);
+                .add(AtItem.OBSIDIAN_HOE)
+                .add(AtItem.MYTHRIL_HOE);
         
         getOrCreateTagBuilder(ItemTags.HEAD_ARMOR)
-                .add(AtItems.OBSIDIAN_HELMET)
-                .add(AtItems.MYTHRIL_HELMET);
+                .add(AtItem.OBSIDIAN_HELMET)
+                .add(AtItem.MYTHRIL_HELMET);
         
         getOrCreateTagBuilder(ItemTags.CHEST_ARMOR)
-                .add(AtItems.OBSIDIAN_CHESTPLATE)
-                .add(AtItems.MYTHRIL_CHESTPLATE);
+                .add(AtItem.OBSIDIAN_CHESTPLATE)
+                .add(AtItem.MYTHRIL_CHESTPLATE);
 
         getOrCreateTagBuilder(ItemTags.LEG_ARMOR)
-                .add(AtItems.OBSIDIAN_LEGGINGS)
-                .add(AtItems.MYTHRIL_LEGGINGS);
+                .add(AtItem.OBSIDIAN_LEGGINGS)
+                .add(AtItem.MYTHRIL_LEGGINGS);
         
         getOrCreateTagBuilder(ItemTags.FOOT_ARMOR)
-                .add(AtItems.OBSIDIAN_BOOTS)
-                .add(AtItems.MYTHRIL_BOOTS);
+                .add(AtItem.OBSIDIAN_BOOTS)
+                .add(AtItem.MYTHRIL_BOOTS);
     }
 }

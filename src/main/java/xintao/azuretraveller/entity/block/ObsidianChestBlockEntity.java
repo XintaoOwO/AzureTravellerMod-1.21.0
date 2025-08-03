@@ -13,7 +13,7 @@ import net.minecraft.screen.ScreenHandler;
 import net.minecraft.text.Text;
 import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.math.BlockPos;
-import xintao.azuretraveller.entity.AtBlockEntities;
+import xintao.azuretraveller.entity.AtBlockEntity;
 
 public class ObsidianChestBlockEntity extends LootableContainerBlockEntity 
 {
@@ -26,7 +26,7 @@ public class ObsidianChestBlockEntity extends LootableContainerBlockEntity
     
     public ObsidianChestBlockEntity(BlockPos blockPos, BlockState blockState)
     {
-        this(AtBlockEntities.OBSIDIAN_CHEST_BLOCK_ENTITY, blockPos, blockState);
+        this(AtBlockEntity.OBSIDIAN_CHEST_BLOCK_ENTITY, blockPos, blockState);
     }
 
     @Override

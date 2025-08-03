@@ -14,7 +14,7 @@ import net.minecraft.world.gen.foliage.BlobFoliagePlacer;
 import net.minecraft.world.gen.stateprovider.BlockStateProvider;
 import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
 import xintao.azuretraveller.AzureTraveller;
-import xintao.azuretraveller.block.AtBlocks;
+import xintao.azuretraveller.block.AtBlock;
 
 public class AtTreeConfiguredFeatures
 {
@@ -26,9 +26,9 @@ public class AtTreeConfiguredFeatures
     {
         register(featureRegisterable, CELESTE_TREE_CONFIGURED, Feature.TREE, 
                 new TreeFeatureConfig.Builder(
-                        BlockStateProvider.of(AtBlocks.CELESTE_LOG), 
+                        BlockStateProvider.of(AtBlock.CELESTE_LOG),
                         new StraightTrunkPlacer(4, 2, 0), 
-                        BlockStateProvider.of(AtBlocks.CELESTE_LEAVES),
+                        BlockStateProvider.of(AtBlock.CELESTE_LEAVES),
                         // 半径，相对于树干的偏移量，高度
                         new BlobFoliagePlacer(ConstantIntProvider.create(3), ConstantIntProvider.create(0), 2), 
                         new TwoLayersFeatureSize(1, 0, 1)
@@ -38,9 +38,9 @@ public class AtTreeConfiguredFeatures
         
         register(featureRegisterable, PEAR_TREE_CONFIGURED, Feature.TREE, 
                 new TreeFeatureConfig.Builder(
-                        BlockStateProvider.of(AtBlocks.PEAR_LOG), 
+                        BlockStateProvider.of(AtBlock.PEAR_LOG),
                         new StraightTrunkPlacer(4, 1, 0), 
-                        BlockStateProvider.of(AtBlocks.PEAR_LEAVES), 
+                        BlockStateProvider.of(AtBlock.PEAR_LEAVES),
                         new BlobFoliagePlacer(ConstantIntProvider.create(3), ConstantIntProvider.create(0), 2), 
                         new TwoLayersFeatureSize(1, 0, 1)
                 )
@@ -49,9 +49,9 @@ public class AtTreeConfiguredFeatures
 
         register(featureRegisterable, PEACH_TREE_CONFIGURED, Feature.TREE, 
                 new TreeFeatureConfig.Builder(
-                        BlockStateProvider.of(AtBlocks.PEACH_LOG),
+                        BlockStateProvider.of(AtBlock.PEACH_LOG),
                         new StraightTrunkPlacer(2, 1, 0),
-                        BlockStateProvider.of(AtBlocks.PEACH_LEAVES),
+                        BlockStateProvider.of(AtBlock.PEACH_LEAVES),
                         new BlobFoliagePlacer(ConstantIntProvider.create(3), ConstantIntProvider.create(0), 2), 
                         new TwoLayersFeatureSize(1, 0, 1)
                 )

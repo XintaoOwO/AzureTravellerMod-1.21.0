@@ -14,7 +14,7 @@ import xintao.azuretraveller.AzureTraveller;
 
 import java.util.List;
 
-public class AtOrePlacedFeatures
+public class AtOrePlacedFeature
 {
     public static final RegistryKey<PlacedFeature> SILVER_ORE_PLACED = of("silver_ore_placed");
 
@@ -24,7 +24,7 @@ public class AtOrePlacedFeatures
                 .getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
         
         register(featureRegisterable, SILVER_ORE_PLACED, registryEntryLookup
-                .getOrThrow(AtOreConfiguredFeatures.SILVER_ORE_CONFIGURED), 
+                .getOrThrow(AtOreConfiguredFeature.SILVER_ORE_CONFIGURED),
                 modifiersWithCount(10, HeightRangePlacementModifier.trapezoid(YOffset.fixed(-32), YOffset.fixed(48))));
     }
     
