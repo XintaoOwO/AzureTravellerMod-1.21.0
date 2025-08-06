@@ -36,7 +36,7 @@ public class AzureTraveller implements ModInitializer
 		AtItemGroup.registerModItemGroup();
 		AtBlockEntity.init();
 		AtWoodBlock.addModWood();
-		AtWorldGeneration.modWorldGeneration();
+		AtWorldGeneration.loadModWorldGeneration();
 
 		// 在控制台和日志文件中输出一条信息，表示模组已成功加载。
 		LOGGER.info("Hello Fabric world!");

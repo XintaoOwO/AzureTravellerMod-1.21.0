@@ -7,7 +7,7 @@ import xintao.azuretraveller.world.ore.AtOrePlacedFeature;
 
 public class AtOreGeneration
 {
-    public static void modOreGeneration()
+    public static void loadModOreGeneration()
     {
         BiomeModifications.addFeature(
                 BiomeSelectors.foundInOverworld(), 

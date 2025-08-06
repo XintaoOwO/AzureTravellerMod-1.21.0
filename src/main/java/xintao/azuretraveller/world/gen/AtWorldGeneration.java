@@ -2,9 +2,9 @@ package xintao.azuretraveller.world.gen;
 
 public class AtWorldGeneration
 {
-    public static void modWorldGeneration()
+    public static void loadModWorldGeneration()
     {
-        AtTreeGeneration.modTreeGeneration();
-        AtOreGeneration.modOreGeneration();
+        AtTreeGeneration.loadModTreeGeneration();
+        AtOreGeneration.loadModOreGeneration();
     }
 }

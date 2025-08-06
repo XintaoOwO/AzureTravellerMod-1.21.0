@@ -8,7 +8,7 @@ import xintao.azuretraveller.world.tree.AtTreePlacedFeatures;
 
 public class AtTreeGeneration
 {
-    public static void modTreeGeneration()
+    public static void loadModTreeGeneration()
     {
         BiomeModifications.addFeature(BiomeSelectors
                         .includeByKey(BiomeKeys.FOREST, BiomeKeys.FLOWER_FOREST), 
