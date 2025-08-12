@@ -19,29 +19,31 @@ import java.util.function.Supplier;
 public class AtArmorMaterial
 {
     public static final RegistryEntry<ArmorMaterial> MYTHRIL = 
-            register("mythril", Util.make(new EnumMap(ArmorItem.Type.class), 
-            map -> 
-                {
-                    map.put(ArmorItem.Type.BOOTS, 3);
-                    map.put(ArmorItem.Type.LEGGINGS, 6);
-                    map.put(ArmorItem.Type.CHESTPLATE, 8);
-                    map.put(ArmorItem.Type.HELMET, 3);
-                    map.put(ArmorItem.Type.BODY, 11);
-                }
+            register("mythril",
+                    Util.make(new EnumMap(ArmorItem.Type.class),
+                            map ->
+                    {
+                        map.put(ArmorItem.Type.BOOTS, 3);
+                        map.put(ArmorItem.Type.LEGGINGS, 6);
+                        map.put(ArmorItem.Type.CHESTPLATE, 8);
+                        map.put(ArmorItem.Type.HELMET, 3);
+                        map.put(ArmorItem.Type.BODY, 11);
+                    }
             ), 
-            15, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 3.0f, 0.1f, 
+            15, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 3.0f, 0.1f,
                     () -> Ingredient.ofItems(AtItem.MYTHRIL_INGOT));
 
     public static final RegistryEntry<ArmorMaterial> OBSIDIAN =
-            register("obsidian", Util.make(new EnumMap(ArmorItem.Type.class),
+            register("obsidian",
+                    Util.make(new EnumMap(ArmorItem.Type.class),
                             map -> 
-                {
-                    map.put(ArmorItem.Type.BOOTS, 3);
-                    map.put(ArmorItem.Type.LEGGINGS, 6);
-                    map.put(ArmorItem.Type.CHESTPLATE, 8);
-                    map.put(ArmorItem.Type.HELMET, 3);
-                    map.put(ArmorItem.Type.BODY, 11);
-                }
+                    {
+                        map.put(ArmorItem.Type.BOOTS, 3);
+                        map.put(ArmorItem.Type.LEGGINGS, 6);
+                        map.put(ArmorItem.Type.CHESTPLATE, 8);
+                        map.put(ArmorItem.Type.HELMET, 3);
+                        map.put(ArmorItem.Type.BODY, 11);
+                    }
             ),
                     15, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 1.5f, 0.0f,
                     () -> Ingredient.ofItems(AtItem.OBSIDIAN_INGOT));
@@ -54,7 +56,7 @@ public class AtArmorMaterial
             float toughness,
             float knockbackResistance,
             Supplier<Ingredient> repairIngredient
-    ) 
+    )
     {
         List<ArmorMaterial.Layer> list = List.of(new ArmorMaterial.Layer(Identifier.of(AzureTraveller.MOD_ID, id)));
         return register(id, defense, enchantability, equipSound, toughness, knockbackResistance, repairIngredient, list);
@@ -69,13 +71,13 @@ public class AtArmorMaterial
             float knockbackResistance,
             Supplier<Ingredient> repairIngredient,
             List<ArmorMaterial.Layer> layers
-    ) 
+    )
     {
         EnumMap<ArmorItem.Type, Integer> enumMap = new EnumMap(ArmorItem.Type.class);
 
         for (ArmorItem.Type type : ArmorItem.Type.values()) 
         {
-            enumMap.put(type, (Integer)defense.get(type));
+            enumMap.put(type, defense.get(type));
         }
 
         return Registry.registerReference(
