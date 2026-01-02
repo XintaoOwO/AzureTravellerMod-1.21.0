@@ -4,7 +4,7 @@ import net.minecraft.component.type.FoodComponent;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 
-public class AtFoodComponent
+public class AtFoodComponent // 食物组件，1.21.1
 {
     // 幸运果，提供1分钟幸运效果，alwaysEdible()方法可以让食物在任何时候都可以吃（即饥饿值满的时候也可以吃）
     public static final FoodComponent LUCKY_APPLE = new FoodComponent.Builder().nutrition(4).saturationModifier(0.6f)

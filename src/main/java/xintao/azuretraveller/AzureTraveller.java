@@ -41,7 +41,7 @@ public class AzureTraveller implements ModInitializer
 		// 在控制台和日志文件中输出一条信息，表示模组已成功加载。
 		LOGGER.info("Hello Fabric world!");
 
-		// 这行代码会在控制台和日志文件中输出一条信息，表示模组已成功加载。
+		// 这行代码会在控制台中输出一条信息，表示模组已成功加载。
 		System.out.println("Hello Fabric world!");
 	}
 }

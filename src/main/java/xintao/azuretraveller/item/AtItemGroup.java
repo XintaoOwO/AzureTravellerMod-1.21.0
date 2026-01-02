@@ -11,7 +11,7 @@ import net.minecraft.util.Identifier;
 import xintao.azuretraveller.AzureTraveller;
 import xintao.azuretraveller.block.AtBlock;
 
-public class AtItemGroup
+public class AtItemGroup // 物品栏  物品分类
 {
     private static final RegistryKey<ItemGroup> AT_Materials = register("at_materials");
     private static final RegistryKey<ItemGroup> AT_Building_Blocks = register("at_building_blocks");

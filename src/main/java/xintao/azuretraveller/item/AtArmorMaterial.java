@@ -16,8 +16,9 @@ import java.util.EnumMap;
 import java.util.List;
 import java.util.function.Supplier;
 
-public class AtArmorMaterial
+public class AtArmorMaterial // 装备材料
 {
+    // 秘银
     public static final RegistryEntry<ArmorMaterial> MYTHRIL = 
             register("mythril",
                     Util.make(new EnumMap(ArmorItem.Type.class),
@@ -33,6 +34,7 @@ public class AtArmorMaterial
             15, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 3.0f, 0.1f,
                     () -> Ingredient.ofItems(AtItem.MYTHRIL_INGOT));
 
+    // 黑曜石
     public static final RegistryEntry<ArmorMaterial> OBSIDIAN =
             register("obsidian",
                     Util.make(new EnumMap(ArmorItem.Type.class),
@@ -47,7 +49,8 @@ public class AtArmorMaterial
             ),
                     15, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 1.5f, 0.0f,
                     () -> Ingredient.ofItems(AtItem.OBSIDIAN_INGOT));
-    
+
+    // 注册方法
     private static RegistryEntry<ArmorMaterial> register(
             String id,
             EnumMap<ArmorItem.Type, Integer> defense,

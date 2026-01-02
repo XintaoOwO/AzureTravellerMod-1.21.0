@@ -9,8 +9,9 @@ import xintao.azuretraveller.block.AtBlock;
 import xintao.azuretraveller.item.armor.AtArmorItem;
 import xintao.azuretraveller.item.tool.PickaxeAxeItem;
 
-public class AtItem
+public class AtItem // 物品
 {
+    // 各种矿物锭
     public static final Item RAW_SILVER = registerItem("raw_silver", new Item(new Item.Settings()));
     public static final Item RAW_MYTHRIL = registerItem("raw_mythril", new Item(new Item.Settings()));
     public static final Item RAW_CELESTITE = registerItem("raw_celestite", new Item(new Item.Settings()));
@@ -18,7 +19,8 @@ public class AtItem
     public static final Item SILVER_INGOT = registerItem("silver_ingot", new Item(new Item.Settings()));
     public static final Item CELESTITE_INGOT = registerItem("celestite_ingot", new Item(new Item.Settings()));
     public static final Item OBSIDIAN_INGOT = registerItem("obsidian_ingot", new Item(new Item.Settings()));
-    
+
+    // 食物
     public static final Item LUCKY_APPLE = registerItem("lucky_apple", new Item(new Item.Settings()
             .food(AtFoodComponent.LUCKY_APPLE)));
     public static final Item STRAWBERRY = registerItem("strawberry", new Item(new Item.Settings()
@@ -26,6 +28,7 @@ public class AtItem
     public static final Item BLUEBERRY = registerItem("blueberry", new Item(new Item.Settings()
             .food(AtFoodComponent.BLUEBERRY)));
 
+    // 装备
     public static final Item MYTHRIL_SWORD = registerItem("mythril_sword", new SwordItem(AtToolMaterial.MYTHRIL,
             new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(AtToolMaterial.MYTHRIL,
                     3, -2.4f))));
