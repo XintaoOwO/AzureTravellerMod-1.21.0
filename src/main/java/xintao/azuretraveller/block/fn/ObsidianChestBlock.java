@@ -63,7 +63,7 @@ public class ObsidianChestBlock extends AbstractChestBlock<ObsidianChestBlockEnt
 
             if (factory == null) 
             {
-                player.openHandledScreen(factory);
+                player.openHandledScreen(null);
                 
                 return ActionResult.SUCCESS;
             }
