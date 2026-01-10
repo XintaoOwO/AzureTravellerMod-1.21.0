@@ -2,10 +2,12 @@
 	"required": true,
 	"package": "xintao.azuretraveller.mixin",
 	"compatibilityLevel": "JAVA_21",
-	"mixins": [
+	"mixins":
+	[
 		"ExampleMixin"
 	],
-	"injectors": {
+	"injectors":
+	{
 		"defaultRequire": 1
 	}
 }

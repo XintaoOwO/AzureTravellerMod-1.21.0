@@ -3,38 +3,47 @@
 	"id": "aztrvl",
 	"version": "${version}",
 	"name": "Azure Traveller",
-	"description": "An adventure mod for Fabric Minecraft 1.21!",
-	"authors": [
+	"description": "An adventure mod for Fabric Minecraft 1.21.1!",
+	"authors":
+	[
 		"xintao"
 	],
-	"contact": {
+	"contact":
+	{
 		"homepage": "",
 		"sources": "https://github.com/XintaoOwO/AzureTravellerMod-1.21.0"
 	},
 	"license": "GPL-3.0",
 	"icon": "assets/aztrvl/icon.png",
 	"environment": "*",
-	"entrypoints": {
-		"main": [
+	"entrypoints":
+	{
+		"main":
+		[
           "xintao.azuretraveller.AzureTraveller"
 		],
-		"fabric-datagen": [
+		"fabric-datagen":
+		[
 			"xintao.azuretraveller.AzureTravellerDataGenerator"
 		],
-		"client": [
+		"client":
+		[
 			"xintao.azuretraveller.AzureTravellerClient"
 		]
 	},
-	"mixins": [
+	"mixins":
+	[
 		"aztrvl.mixins.json"
 	],
-	"depends": {
+	"depends":
+	{
 		"fabricloader": ">=0.16.14",
 		"minecraft": "~1.21.1",
 		"java": ">=21",
 		"fabric-api": "*"
 	},
-	"suggests": {
+	"suggests":
+	{
 		"another-mod": "*"
 	}
 }
