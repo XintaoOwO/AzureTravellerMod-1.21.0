@@ -127,6 +127,7 @@ public class AtItemGroup // 物品栏  物品分类
                             entries.add(AtItem.MYTHRIL_SHOVEL);
                             entries.add(AtItem.MYTHRIL_HOE);
                             entries.add(AtItem.MYTHRIL_PICKAXE_AXE);
+                            entries.add(AtItem.MYTHRIL_BOW);
                             
                             entries.add(AtItem.OBSIDIAN_HELMET);
                             entries.add(AtItem.OBSIDIAN_CHESTPLATE);
