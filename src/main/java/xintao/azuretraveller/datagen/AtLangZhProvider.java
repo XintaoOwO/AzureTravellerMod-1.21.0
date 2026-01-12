@@ -37,6 +37,7 @@ public class AtLangZhProvider extends FabricLanguageProvider
         translationBuilder.add(AtItem.MYTHRIL_SHOVEL, "秘银锹");
         translationBuilder.add(AtItem.MYTHRIL_HOE, "秘银锄");
         translationBuilder.add(AtItem.MYTHRIL_PICKAXE_AXE, "秘银镐斧");
+        translationBuilder.add(AtItem.MYTHRIL_BOW, "秘银弓");
         translationBuilder.add(AtItem.MYTHRIL_HELMET, "秘银头盔");
         translationBuilder.add(AtItem.MYTHRIL_CHESTPLATE, "秘银胸甲");
         translationBuilder.add(AtItem.MYTHRIL_LEGGINGS, "秘银护腿");

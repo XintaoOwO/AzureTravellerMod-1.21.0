@@ -77,5 +77,8 @@ public class AtItemTagProvider extends FabricTagProvider.ItemTagProvider
         getOrCreateTagBuilder(ItemTags.FOOT_ARMOR)
                 .add(AtItem.OBSIDIAN_BOOTS)
                 .add(AtItem.MYTHRIL_BOOTS);
+
+        getOrCreateTagBuilder(ItemTags.BOW_ENCHANTABLE)
+                .add(AtItem.MYTHRIL_BOW);
     }
 }

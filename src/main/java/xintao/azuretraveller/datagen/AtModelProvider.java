@@ -79,6 +79,7 @@ public class AtModelProvider extends FabricModelProvider
         itemModelGenerator.register(AtItem.MYTHRIL_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(AtItem.MYTHRIL_HOE, Models.HANDHELD);
         itemModelGenerator.register(AtItem.MYTHRIL_PICKAXE_AXE, Models.HANDHELD);
+        itemModelGenerator.register(AtItem.MYTHRIL_BOW, Models.HANDHELD);
         
         itemModelGenerator.registerArmor((ArmorItem) AtItem.MYTHRIL_HELMET);
         itemModelGenerator.registerArmor((ArmorItem) AtItem.MYTHRIL_CHESTPLATE);

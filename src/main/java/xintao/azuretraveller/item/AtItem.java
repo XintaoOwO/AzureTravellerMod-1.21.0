@@ -8,6 +8,7 @@ import xintao.azuretraveller.AzureTraveller;
 import xintao.azuretraveller.block.AtBlock;
 import xintao.azuretraveller.item.armor.AtArmorItem;
 import xintao.azuretraveller.item.tool.PickaxeAxeItem;
+import xintao.azuretraveller.item.weapon.MythrilBowItem;
 
 public class AtItem // 物品
 {
@@ -79,9 +80,13 @@ public class AtItem // 物品
             new Item.Settings().attributeModifiers(HoeItem.createAttributeModifiers(AtToolMaterial.OBSIDIAN,
                     -3.0f, 0.0f))));
     
-    public static final Item MYTHRIL_PICKAXE_AXE = registerItem("mythril_pickaxe_axe", new PickaxeAxeItem(AtToolMaterial.MYTHRIL,
-            new Item.Settings().attributeModifiers(PickaxeAxeItem.createAttributeModifiers(AtToolMaterial.MYTHRIL,
+    public static final Item MYTHRIL_PICKAXE_AXE = registerItem("mythril_pickaxe_axe",
+            new PickaxeAxeItem(AtToolMaterial.MYTHRIL,
+                new Item.Settings().attributeModifiers(PickaxeAxeItem.createAttributeModifiers(AtToolMaterial.MYTHRIL,
                     3.0f, -3.0f))));
+
+    public static final Item MYTHRIL_BOW = registerItem("mythril_bow",
+            new MythrilBowItem(new Item.Settings().maxDamage(512)));
     
     public static final Item STRAWBERRY_SEEDS = registerItem("strawberry_seeds", 
             new AliasedBlockItem(AtBlock.STRAWBERRY_CROP, new Item.Settings()));
