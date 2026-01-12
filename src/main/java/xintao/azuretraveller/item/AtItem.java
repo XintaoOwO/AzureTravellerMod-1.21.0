@@ -84,7 +84,7 @@ public class AtItem // 物品
             new PickaxeAxeItem(AtToolMaterial.MYTHRIL,
                 new Item.Settings().attributeModifiers(PickaxeAxeItem.createAttributeModifiers(AtToolMaterial.MYTHRIL,
                     3.0f, -3.0f))));
-
+    // 没有完全添加好。伤害、耐久等属性还没有改。
     public static final Item MYTHRIL_BOW = registerItem("mythril_bow",
             new MythrilBowItem(new Item.Settings().maxDamage(512)));
     
