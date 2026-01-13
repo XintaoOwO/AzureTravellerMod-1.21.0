@@ -11,9 +11,11 @@ import java.util.function.Supplier;
 
 public enum AtToolMaterial implements ToolMaterial
 {
-    OBSIDIAN(AtBlockTag.INCORRECT_FOR_OBSIDIAN_TOOL, 2048, 8.0f, 2.5f, 10,
+    OBSIDIAN(AtBlockTag.INCORRECT_FOR_OBSIDIAN_TOOL,
+            2048, 8.0f, 2.5f, 10,
             () -> Ingredient.ofItems(AtItem.OBSIDIAN_INGOT)),
-    MYTHRIL(AtBlockTag.INCORRECT_FOR_MYTHRIL_TOOL, 1200, 10.0f, 5.0f, 18,
+    MYTHRIL(AtBlockTag.INCORRECT_FOR_MYTHRIL_TOOL,
+            1200, 10.0f, 5.0f, 18,
             () -> Ingredient.ofItems(AtItem.MYTHRIL_INGOT));
     
     private final TagKey<Block> inverseTag;
