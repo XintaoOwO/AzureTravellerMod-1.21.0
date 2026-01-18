@@ -6,8 +6,8 @@ import org.slf4j.LoggerFactory;
 import xintao.azuretraveller.block.AtBlock;
 import xintao.azuretraveller.block.wood.AtWoodBlock;
 import xintao.azuretraveller.entity.AtBlockEntity;
-import xintao.azuretraveller.item.AtItemGroup;
 import xintao.azuretraveller.item.AtItem;
+import xintao.azuretraveller.item.AtItemGroup;
 import xintao.azuretraveller.world.gen.AtWorldGeneration;
 
 public class AzureTraveller implements ModInitializer

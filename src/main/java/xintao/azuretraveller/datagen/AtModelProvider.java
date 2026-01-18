@@ -8,8 +8,8 @@ import net.minecraft.data.client.Models;
 import net.minecraft.data.family.BlockFamily;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.state.property.Properties;
-import xintao.azuretraveller.block.AtBlockFamily;
 import xintao.azuretraveller.block.AtBlock;
+import xintao.azuretraveller.block.AtBlockFamily;
 import xintao.azuretraveller.item.AtItem;
 
 public class AtModelProvider extends FabricModelProvider

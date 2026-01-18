@@ -1,8 +1,6 @@
 package xintao.azuretraveller.item.weapon;
 
-import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.BowItem;
-import net.minecraft.registry.entry.RegistryEntry;
 
 public class MythrilBowItem extends BowItem
 {
